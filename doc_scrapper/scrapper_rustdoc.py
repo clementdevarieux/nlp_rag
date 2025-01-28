@@ -2,7 +2,7 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-from src.config import RAG_FILE
+from src.config import RAG_FILE, DOCUMENTS_DIR
 
 BASE_URL = "https://docs.rs"
 CRATE_URL = "https://docs.rs/burn/latest/burn/index.html"
@@ -79,31 +79,41 @@ def get_doc_links(soup, dict_links, src):
 def scrape_page(link: str, visited: dict):
     page_soup = get_soup(link)
 
+    title = link.split("/")[-1][:-5]
+    if title == "index":
+        title = link.split("/")[-2]
+
+    title = title + ".md"
+
+    print(title)
+
+
     page_content_html = extract_main_content(page_soup)
     main_content_md = to_markdown(page_content_html)
+
+    with open(DOCUMENTS_DIR / title, "w", encoding="utf-8") as f:
+        f.write(main_content_md)
 
     links = []
     if link.endswith("index.html"):
         link_no_index = link.rsplit("/", 1)[0] + "/"
         links = get_doc_links(page_soup, visited, link_no_index)
 
-    doc_md = main_content_md
     for link in links:
         if not visited[link]:
             visited[link] = True
             try:
-                doc_md += f"\n# Page : {link}\n\n\n"
-                doc_md += scrape_page(link, visited)
+                 scrape_page(link, visited)
 
             except Exception as e:
                 print(f"Impossible de scraper {link} : {e}")
-    return doc_md
 
+
+def main(link):
+    visited = dict()
+    scrape_page(link, visited)
 
 if __name__ == "__main__":
-    # scrape_ndarray_docs()
-    visited = {}
-    global_md = scrape_page(CRATE_URL, visited)
-    with open(RAG_FILE, "w", encoding="utf-8") as f:
-        f.write(global_md)
+    main(CRATE_URL)
+
 # %%
