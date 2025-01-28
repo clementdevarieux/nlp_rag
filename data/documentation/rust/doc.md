@@ -183,11 +183,13 @@ Burn.
 - constantConstant macro.
 ## Type Aliases
 - LearningRateType alias for the learning rate.
-## Page : https://docs.rs/burn/latest/burn/backend/index.html
+# Page : https://docs.rs/burn/latest/burn/backend/index.html
+
 
 burn# Module backend
 Expand descriptionBackend module.
-## Page : https://docs.rs/burn/latest/burn/config/index.html
+# Page : https://docs.rs/burn/latest/burn/config/index.html
+
 
 burn# Module config
 Expand descriptionThe configuration module.
@@ -199,7 +201,8 @@ Expand descriptionThe configuration module.
 - config_to_jsonConverts a configuration to a JSON string.
 ## Derive Macros
 - ConfigDerive macro for the config.
-## Page : https://docs.rs/burn/latest/burn/config/enum.ConfigError.html
+# Page : https://docs.rs/burn/latest/burn/config/enum.ConfigError.html
+
 
 burn::config# Enum ConfigError
 `pub enum ConfigError {
@@ -255,7 +258,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/config/trait.Config.html
+# Page : https://docs.rs/burn/latest/burn/config/trait.Config.html
+
 
 burn::config# Trait Config
 `pub trait Config: Serialize + DeserializeOwned {
@@ -349,7 +353,8 @@ Source`impl Config for AdamConfig`
 Source`impl Config for AdamWConfig`
 Source`impl Config for RmsPropConfig`
 Source`impl Config for SgdConfig`
-## Page : https://docs.rs/burn/latest/burn/config/fn.config_to_json.html
+# Page : https://docs.rs/burn/latest/burn/config/fn.config_to_json.html
+
 
 burn::config# Function config_to_json
 `pub fn config_to_json where
@@ -363,7 +368,8 @@ burn::config# Function config_to_json
 ## Returns
 
 The JSON string.
-## Page : https://docs.rs/burn/latest/burn/config/derive.Config.html
+# Page : https://docs.rs/burn/latest/burn/config/derive.Config.html
+
 
 burn::config# Derive Macro Config
 `#[derive(Config)]
@@ -373,11 +379,13 @@ burn::config# Derive Macro Config
 }
 
 `Expand descriptionDerive macro for the config.
-## Page : https://docs.rs/burn/latest/burn/data/index.html
+# Page : https://docs.rs/burn/latest/burn/data/index.html
+
 
 burn# Module data
 Expand descriptionData module.
-## Page : https://docs.rs/burn/latest/burn/grad_clipping/index.html
+# Page : https://docs.rs/burn/latest/burn/grad_clipping/index.html
+
 
 burn# Module grad_clipping
 Expand descriptionGradient clipping module.
@@ -386,7 +394,8 @@ Expand descriptionGradient clipping module.
 by clipping every component of the gradient by value or by norm during
 backpropagation.
 - GradientClippingConfigGradient Clipping provides a way to mitigate exploding gradients
-## Page : https://docs.rs/burn/latest/burn/grad_clipping/enum.GradientClipping.html
+# Page : https://docs.rs/burn/latest/burn/grad_clipping/enum.GradientClipping.html
+
 
 burn::grad_clipping# Enum GradientClipping
 `pub enum GradientClipping {
@@ -457,7 +466,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/grad_clipping/enum.GradientClippingConfig.html
+# Page : https://docs.rs/burn/latest/burn/grad_clipping/enum.GradientClippingConfig.html
+
 
 burn::grad_clipping# Enum GradientClippingConfig
 `pub enum GradientClippingConfig {
@@ -531,7 +541,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/index.html
+
 
 burn# Module lr_scheduler
 Expand descriptionLearning rate scheduler module.
@@ -544,13 +555,15 @@ Expand descriptionLearning rate scheduler module.
 - stepStep learning rate scheduler
 ## Traits
 - LrSchedulerLearning rate scheduler defines how the learning rate will evolve during training.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/constant/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/constant/index.html
+
 
 burn::lr_scheduler# Module constant
 Expand descriptionConstant learning rate scheduler
 ## Structs
 - ConstantLrConstant learning rate implementing learning rate scheduler.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/constant/struct.ConstantLr.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/constant/struct.ConstantLr.html
+
 
 burn::lr_scheduler::constant# Struct ConstantLr
 `pub struct ConstantLr { /* private fields */ }
@@ -612,7 +625,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/index.html
+
 
 burn::lr_scheduler# Module cosine
 Expand descriptionCosine learning rate scheduler
@@ -620,7 +634,8 @@ Expand descriptionCosine learning rate scheduler
 - CosineAnnealingLrSchedulerA Cosine Annealing learning rate scheduler.
 - CosineAnnealingLrSchedulerConfigThe configuration for creating a Cosine Annealing learning rate scheduler with warm
 restarts.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/struct.CosineAnnealingLrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/struct.CosineAnnealingLrScheduler.html
+
 
 burn::lr_scheduler::cosine# Struct CosineAnnealingLrScheduler
 `pub struct CosineAnnealingLrScheduler { /* private fields */ }
@@ -679,7 +694,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/struct.CosineAnnealingLrSchedulerConfig.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/cosine/struct.CosineAnnealingLrSchedulerConfig.html
+
 
 burn::lr_scheduler::cosine# Struct CosineAnnealingLrSchedulerConfig
 `pub struct CosineAnnealingLrSchedulerConfig { /* private fields */ }
@@ -770,14 +786,16 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/index.html
+
 
 burn::lr_scheduler# Module exponential
 Expand descriptionExponential learning rate scheduler
 ## Structs
 - ExponentialLrSchedulerA exponential learning rate scheduler.
 - ExponentialLrSchedulerConfigThe configuration for creating an exponential learning rate scheduler.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/struct.ExponentialLrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/struct.ExponentialLrScheduler.html
+
 
 burn::lr_scheduler::exponential# Struct ExponentialLrScheduler
 `pub struct ExponentialLrScheduler { /* private fields */ }
@@ -834,7 +852,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/struct.ExponentialLrSchedulerConfig.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/exponential/struct.ExponentialLrSchedulerConfig.html
+
 
 burn::lr_scheduler::exponential# Struct ExponentialLrSchedulerConfig
 `pub struct ExponentialLrSchedulerConfig { /* private fields */ }
@@ -916,14 +935,16 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/index.html
+
 
 burn::lr_scheduler# Module linear
 Expand descriptionLinear learning rate scheduler
 ## Structs
 - LinearLrSchedulerA linear learning rate scheduler.
 - LinearLrSchedulerConfigThe configuration for creating a linear learning rate scheduler.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/struct.LinearLrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/struct.LinearLrScheduler.html
+
 
 burn::lr_scheduler::linear# Struct LinearLrScheduler
 `pub struct LinearLrScheduler { /* private fields */ }
@@ -980,7 +1001,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/struct.LinearLrSchedulerConfig.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/linear/struct.LinearLrSchedulerConfig.html
+
 
 burn::lr_scheduler::linear# Struct LinearLrSchedulerConfig
 `pub struct LinearLrSchedulerConfig { /* private fields */ }
@@ -1071,14 +1093,16 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/index.html
+
 
 burn::lr_scheduler# Module noam
 Expand descriptionNoam learning rate scheduler
 ## Structs
 - NoamLrSchedulerNoam learning rate scheduler as described in Attention Is All You Need.
 - NoamLrSchedulerConfigConfiguration to create a noam learning rate scheduler.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/struct.NoamLrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/struct.NoamLrScheduler.html
+
 
 burn::lr_scheduler::noam# Struct NoamLrScheduler
 `pub struct NoamLrScheduler { /* private fields */ }
@@ -1133,7 +1157,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/struct.NoamLrSchedulerConfig.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/noam/struct.NoamLrSchedulerConfig.html
+
 
 burn::lr_scheduler::noam# Struct NoamLrSchedulerConfig
 `pub struct NoamLrSchedulerConfig { /* private fields */ }
@@ -1211,14 +1236,16 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/index.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/index.html
+
 
 burn::lr_scheduler# Module step
 Expand descriptionStep learning rate scheduler
 ## Structs
 - StepLrSchedulerStep learning rate scheduler.
 - StepLrSchedulerConfigThe configuration for create a step learning rate scheduler.
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/struct.StepLrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/struct.StepLrScheduler.html
+
 
 burn::lr_scheduler::step# Struct StepLrScheduler
 `pub struct StepLrScheduler { /* private fields */ }
@@ -1273,7 +1300,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/struct.StepLrSchedulerConfig.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/step/struct.StepLrSchedulerConfig.html
+
 
 burn::lr_scheduler::step# Struct StepLrSchedulerConfig
 `pub struct StepLrSchedulerConfig { /* private fields */ }
@@ -1357,7 +1385,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/lr_scheduler/trait.LrScheduler.html
+# Page : https://docs.rs/burn/latest/burn/lr_scheduler/trait.LrScheduler.html
+
 
 burn::lr_scheduler# Trait LrScheduler
 `pub trait LrScheduler: Send + Sync {
@@ -1387,7 +1416,8 @@ Sourcetype Record Source`impl LrScheduler for LinearLrScheduler`
 Sourcetype Record Source`impl LrScheduler for NoamLrScheduler`
 Sourcetype Record Source`impl LrScheduler for StepLrScheduler`
 Sourcetype Record
-## Page : https://docs.rs/burn/latest/burn/module/index.html
+# Page : https://docs.rs/burn/latest/burn/module/index.html
+
 
 burn# Module module
 Expand descriptionModule for the neural network module.
@@ -1419,7 +1449,8 @@ and/or don’t want to update it during training, you don’t need this type to 
 - DevicesType alias to `Vec 
 ## Derive Macros
 - ModuleDerive macro for the module.
-## Page : https://docs.rs/burn/latest/burn/module/struct.Attribute.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.Attribute.html
+
 
 burn::module# Struct Attribute
 `pub struct Attribute {
@@ -1481,7 +1512,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.ConstantRecord.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.ConstantRecord.html
+
 
 burn::module# Struct ConstantRecord
 `pub struct ConstantRecord;
@@ -1546,7 +1578,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/module/struct.Content.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.Content.html
+
 
 burn::module# Struct Content
 `pub struct Content {
@@ -1661,7 +1694,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.DisplaySettings.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.DisplaySettings.html
+
 
 burn::module# Struct DisplaySettings
 `pub struct DisplaySettings { /* private fields */ }
@@ -1807,7 +1841,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.Ignored.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.Ignored.html
+
 
 burn::module# Struct Ignored
 `pub struct Ignored Expand descriptionContainer to satisfy the Module trait for types that are not modules.
@@ -1893,7 +1928,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.Param.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.Param.html
+
 
 burn::module# Struct Param
 `pub struct Param where
@@ -2071,7 +2107,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.ParamId.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.ParamId.html
+
 
 burn::module# Struct ParamId
 `pub struct ParamId { /* private fields */ }
@@ -2154,7 +2191,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.Quantizer.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.Quantizer.html
+
 
 burn::module# Struct Quantizer
 `pub struct Quantizer where
@@ -2213,7 +2251,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/struct.RunningState.html
+# Page : https://docs.rs/burn/latest/burn/module/struct.RunningState.html
+
 
 burn::module# Struct RunningState
 `pub struct RunningState /* private fields */ }
@@ -2302,7 +2341,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/module/trait.AutodiffModule.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.AutodiffModule.html
+
 
 burn::module# Trait AutodiffModule
 `pub trait AutodiffModule where
@@ -2529,7 +2569,8 @@ Sourcetype InnerModule = RunningState Source`impl where
     B: AutodiffBackend,
     K: BasicAutodiffOps `
 Sourcetype InnerModule = Tensor
-## Page : https://docs.rs/burn/latest/burn/module/trait.Module.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.Module.html
+
 
 burn::module# Trait Module
 `pub trait Module where
@@ -2952,7 +2993,8 @@ Sourcetype Record = Param Source`impl where
     B: Backend,
     K: BasicOps `
 Sourcetype Record = ConstantRecord
-## Page : https://docs.rs/burn/latest/burn/module/trait.ModuleDisplay.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.ModuleDisplay.html
+
 
 burn::module# Trait ModuleDisplay
 `pub trait ModuleDisplay: ModuleDisplayDefault {
@@ -3163,7 +3205,8 @@ Source`impl where
 Source`impl where
     B: Backend,
     K: BasicOps `
-## Page : https://docs.rs/burn/latest/burn/module/trait.ModuleDisplayDefault.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.ModuleDisplayDefault.html
+
 
 burn::module# Trait ModuleDisplayDefault
 `pub trait ModuleDisplayDefault {
@@ -3358,7 +3401,8 @@ Source`impl where
 Source`impl where
     B: Backend,
     K: BasicOps `
-## Page : https://docs.rs/burn/latest/burn/module/trait.ModuleMapper.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.ModuleMapper.html
+
 
 burn::module# Trait ModuleMapper
 `pub trait ModuleMapper where
@@ -3374,7 +3418,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     B: Backend,
     C: Calibration,`
-## Page : https://docs.rs/burn/latest/burn/module/trait.ModuleVisitor.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.ModuleVisitor.html
+
 
 burn::module# Trait ModuleVisitor
 `pub trait ModuleVisitor where
@@ -3387,7 +3432,8 @@ Sourcefn visit_int Visit an int tensor in the module.
 Sourcefn visit_bool Visit a bool tensor in the module.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/module/trait.Parameter.html
+# Page : https://docs.rs/burn/latest/burn/module/trait.Parameter.html
+
 
 burn::module# Trait Parameter
 `pub trait Parameter:
@@ -3417,7 +3463,8 @@ Sourcetype Device =  Source`impl where
 Sourcetype Device =  Source`impl where
     B: Backend,`
 Sourcetype Device =
-## Page : https://docs.rs/burn/latest/burn/module/fn.extract_type_name.html
+# Page : https://docs.rs/burn/latest/burn/module/fn.extract_type_name.html
+
 
 burn::module# Function extract_type_name
 `pub fn extract_type_name where
@@ -3426,20 +3473,23 @@ burn::module# Function extract_type_name
 ## Returns
 
 A string slice representing the short name of the type.
-## Page : https://docs.rs/burn/latest/burn/module/fn.list_param_ids.html
+# Page : https://docs.rs/burn/latest/burn/module/fn.list_param_ids.html
+
 
 burn::module# Function list_param_ids
 `pub fn list_param_ids where
     M: Module 
 `Expand descriptionList all the parameter ids in a module.
-## Page : https://docs.rs/burn/latest/burn/module/type.Devices.html
+# Page : https://docs.rs/burn/latest/burn/module/type.Devices.html
+
 
 burn::module# Type Alias Devices
 `pub type Devices Expand descriptionType alias to `Vec 
 ## Aliased Type
 `struct Devices /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/module/derive.Module.html
+# Page : https://docs.rs/burn/latest/burn/module/derive.Module.html
+
 
 burn::module# Derive Macro Module
 `#[derive(Module)]
@@ -3449,7 +3499,8 @@ burn::module# Derive Macro Module
 }
 
 `Expand descriptionDerive macro for the module.
-## Page : https://docs.rs/burn/latest/burn/nn/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/index.html
+
 
 burn# Module nn
 Expand descriptionNeural network module.
@@ -3553,7 +3604,8 @@ See also tanh
 ## Functions
 - generate_sinusoidsReturns sinusoids for positional embedding introduced in
 Attention is all you need.
-## Page : https://docs.rs/burn/latest/burn/nn/attention/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/index.html
+
 
 burn::nn# Module attention
 Expand descriptionAttention module
@@ -3569,7 +3621,8 @@ Expand descriptionAttention module
 ## Functions
 - generate_autoregressive_maskGenerate an autoregressive attention mask.
 - generate_padding_maskGeneration padding attention mask.
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.GeneratePaddingMask.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.GeneratePaddingMask.html
+
 
 burn::nn::attention# Struct GeneratePaddingMask
 `pub struct GeneratePaddingMask where
@@ -3615,7 +3668,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaCache.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaCache.html
+
 
 burn::nn::attention# Struct MhaCache
 `pub struct MhaCache where
@@ -3665,7 +3719,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaInput.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaInput.html
+
 
 burn::nn::attention# Struct MhaInput
 `pub struct MhaInput where
@@ -3735,7 +3790,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaOutput.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MhaOutput.html
+
 
 burn::nn::attention# Struct MhaOutput
 `pub struct MhaOutput where
@@ -3796,7 +3852,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttention.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttention.html
+
 
 burn::nn::attention# Struct MultiHeadAttention
 `pub struct MultiHeadAttention where
@@ -3942,7 +3999,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionConfig.html
+
 
 burn::nn::attention# Struct MultiHeadAttentionConfig
 `pub struct MultiHeadAttentionConfig {
@@ -4045,7 +4103,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionRecord.html
+
 
 burn::nn::attention# Struct MultiHeadAttentionRecord
 `pub struct MultiHeadAttentionRecord where
@@ -4101,7 +4160,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/struct.MultiHeadAttentionRecordItem.html
+
 
 burn::nn::attention# Struct MultiHeadAttentionRecordItem
 `pub struct MultiHeadAttentionRecordItem where
@@ -4167,26 +4227,30 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/attention/fn.generate_autoregressive_mask.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/fn.generate_autoregressive_mask.html
+
 
 burn::nn::attention# Function generate_autoregressive_mask
 `pub fn generate_autoregressive_mask where
     B: Backend,
 `Expand descriptionGenerate an autoregressive attention mask.
 The mask can be used in Transformer modules to train models to generate tensors sequentially.
-## Page : https://docs.rs/burn/latest/burn/nn/attention/fn.generate_padding_mask.html
+# Page : https://docs.rs/burn/latest/burn/nn/attention/fn.generate_padding_mask.html
+
 
 burn::nn::attention# Function generate_padding_mask
 `pub fn generate_padding_mask where
     B: Backend,
 `Expand descriptionGeneration padding attention mask.
-## Page : https://docs.rs/burn/latest/burn/nn/cache/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/cache/index.html
+
 
 burn::nn# Module cache
 Expand descriptionCache module
 ## Structs
 - TensorCacheA cache for a tensor.
-## Page : https://docs.rs/burn/latest/burn/nn/cache/struct.TensorCache.html
+# Page : https://docs.rs/burn/latest/burn/nn/cache/struct.TensorCache.html
+
 
 burn::nn::cache# Struct TensorCache
 `pub struct TensorCache where
@@ -4235,7 +4299,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/index.html
+
 
 burn::nn# Module conv
 Expand descriptionConvolution module
@@ -4271,7 +4336,8 @@ using the init function.
 - DeformConv2dConfigConfiguration to create a deformable 2D convolution layer, using the init function.
 - DeformConv2dRecordThe record type for the module.
 - DeformConv2dRecordItemThe record item type for the module.
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1d.html
+
 
 burn::nn::conv# Struct Conv1d
 `pub struct Conv1d where
@@ -4373,7 +4439,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dConfig.html
+
 
 burn::nn::conv# Struct Conv1dConfig
 `pub struct Conv1dConfig {
@@ -4485,7 +4552,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dRecord.html
+
 
 burn::nn::conv# Struct Conv1dRecord
 `pub struct Conv1dRecord where
@@ -4537,7 +4605,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv1dRecordItem.html
+
 
 burn::nn::conv# Struct Conv1dRecordItem
 `pub struct Conv1dRecordItem where
@@ -4599,7 +4668,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2d.html
+
 
 burn::nn::conv# Struct Conv2d
 `pub struct Conv2d where
@@ -4701,7 +4771,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dConfig.html
+
 
 burn::nn::conv# Struct Conv2dConfig
 `pub struct Conv2dConfig {
@@ -4806,7 +4877,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dRecord.html
+
 
 burn::nn::conv# Struct Conv2dRecord
 `pub struct Conv2dRecord where
@@ -4858,7 +4930,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv2dRecordItem.html
+
 
 burn::nn::conv# Struct Conv2dRecordItem
 `pub struct Conv2dRecordItem where
@@ -4920,7 +4993,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3d.html
+
 
 burn::nn::conv# Struct Conv3d
 `pub struct Conv3d where
@@ -5022,7 +5096,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dConfig.html
+
 
 burn::nn::conv# Struct Conv3dConfig
 `pub struct Conv3dConfig {
@@ -5123,7 +5198,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dRecord.html
+
 
 burn::nn::conv# Struct Conv3dRecord
 `pub struct Conv3dRecord where
@@ -5175,7 +5251,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.Conv3dRecordItem.html
+
 
 burn::nn::conv# Struct Conv3dRecordItem
 `pub struct Conv3dRecordItem where
@@ -5237,7 +5314,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1d.html
+
 
 burn::nn::conv# Struct ConvTranspose1d
 `pub struct ConvTranspose1d where
@@ -5345,7 +5423,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dConfig.html
+
 
 burn::nn::conv# Struct ConvTranspose1dConfig
 `pub struct ConvTranspose1dConfig {
@@ -5451,7 +5530,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dRecord.html
+
 
 burn::nn::conv# Struct ConvTranspose1dRecord
 `pub struct ConvTranspose1dRecord where
@@ -5505,7 +5585,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose1dRecordItem.html
+
 
 burn::nn::conv# Struct ConvTranspose1dRecordItem
 `pub struct ConvTranspose1dRecordItem where
@@ -5569,7 +5650,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2d.html
+
 
 burn::nn::conv# Struct ConvTranspose2d
 `pub struct ConvTranspose2d where
@@ -5677,7 +5759,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dConfig.html
+
 
 burn::nn::conv# Struct ConvTranspose2dConfig
 `pub struct ConvTranspose2dConfig {
@@ -5786,7 +5869,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dRecord.html
+
 
 burn::nn::conv# Struct ConvTranspose2dRecord
 `pub struct ConvTranspose2dRecord where
@@ -5840,7 +5924,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose2dRecordItem.html
+
 
 burn::nn::conv# Struct ConvTranspose2dRecordItem
 `pub struct ConvTranspose2dRecordItem where
@@ -5904,7 +5989,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3d.html
+
 
 burn::nn::conv# Struct ConvTranspose3d
 `pub struct ConvTranspose3d where
@@ -6012,7 +6098,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dConfig.html
+
 
 burn::nn::conv# Struct ConvTranspose3dConfig
 `pub struct ConvTranspose3dConfig {
@@ -6121,7 +6208,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dRecord.html
+
 
 burn::nn::conv# Struct ConvTranspose3dRecord
 `pub struct ConvTranspose3dRecord where
@@ -6175,7 +6263,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.ConvTranspose3dRecordItem.html
+
 
 burn::nn::conv# Struct ConvTranspose3dRecordItem
 `pub struct ConvTranspose3dRecordItem where
@@ -6239,7 +6328,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2d.html
+
 
 burn::nn::conv# Struct DeformConv2d
 `pub struct DeformConv2d where
@@ -6353,7 +6443,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dConfig.html
+
 
 burn::nn::conv# Struct DeformConv2dConfig
 `pub struct DeformConv2dConfig {
@@ -6462,7 +6553,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dRecord.html
+
 
 burn::nn::conv# Struct DeformConv2dRecord
 `pub struct DeformConv2dRecord where
@@ -6515,7 +6607,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/conv/struct.DeformConv2dRecordItem.html
+
 
 burn::nn::conv# Struct DeformConv2dRecordItem
 `pub struct DeformConv2dRecordItem where
@@ -6578,7 +6671,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/gru/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/gru/index.html
+
 
 burn::nn# Module gru
 Expand descriptionGated Recurrent Unit module.
@@ -6587,7 +6681,8 @@ Expand descriptionGated Recurrent Unit module.
 - GruConfigConfiguration to create a gru module using the init function.
 - GruRecordThe record type for the module.
 - GruRecordItemThe record item type for the module.
-## Page : https://docs.rs/burn/latest/burn/nn/gru/struct.Gru.html
+# Page : https://docs.rs/burn/latest/burn/nn/gru/struct.Gru.html
+
 
 burn::nn::gru# Struct Gru
 `pub struct Gru where
@@ -6687,7 +6782,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruConfig.html
+
 
 burn::nn::gru# Struct GruConfig
 `pub struct GruConfig {
@@ -6770,7 +6866,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruRecord.html
+
 
 burn::nn::gru# Struct GruRecord
 `pub struct GruRecord where
@@ -6819,7 +6916,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/gru/struct.GruRecordItem.html
+
 
 burn::nn::gru# Struct GruRecordItem
 `pub struct GruRecordItem where
@@ -6878,7 +6976,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/index.html
+
 
 burn::nn# Module interpolate
 Expand descriptionInterpolate module
@@ -6889,7 +6988,8 @@ Expand descriptionInterpolate module
 - Interpolate2dConfigConfiguration for the 2D interpolation module.
 ## Enums
 - InterpolateModeAlgorithm used for downsampling and upsampling
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate1d.html
+
 
 burn::nn::interpolate# Struct Interpolate1d
 `pub struct Interpolate1d {
@@ -6993,7 +7093,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate1dConfig.html
+
 
 burn::nn::interpolate# Struct Interpolate1dConfig
 `pub struct Interpolate1dConfig {
@@ -7076,7 +7177,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate2d.html
+
 
 burn::nn::interpolate# Struct Interpolate2d
 `pub struct Interpolate2d {
@@ -7181,7 +7283,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/struct.Interpolate2dConfig.html
+
 
 burn::nn::interpolate# Struct Interpolate2dConfig
 `pub struct Interpolate2dConfig {
@@ -7268,7 +7371,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/interpolate/enum.InterpolateMode.html
+# Page : https://docs.rs/burn/latest/burn/nn/interpolate/enum.InterpolateMode.html
+
 
 burn::nn::interpolate# Enum InterpolateMode
 `pub enum InterpolateMode {
@@ -7354,7 +7458,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/index.html
+
 
 burn::nn# Module loss
 Expand descriptionLoss module
@@ -7372,7 +7477,8 @@ Expand descriptionLoss module
 - MseLossCalculate the mean squared error loss from the input logits and the targets.
 ## Enums
 - ReductionThe reduction type for the loss.
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLoss.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLoss.html
+
 
 burn::nn::loss# Struct BinaryCrossEntropyLoss
 `pub struct BinaryCrossEntropyLoss where
@@ -7479,7 +7585,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossConfig.html
+
 
 burn::nn::loss# Struct BinaryCrossEntropyLossConfig
 `pub struct BinaryCrossEntropyLossConfig {
@@ -7564,7 +7671,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossRecord.html
+
 
 burn::nn::loss# Struct BinaryCrossEntropyLossRecord
 `pub struct BinaryCrossEntropyLossRecord where
@@ -7608,7 +7716,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.BinaryCrossEntropyLossRecordItem.html
+
 
 burn::nn::loss# Struct BinaryCrossEntropyLossRecordItem
 `pub struct BinaryCrossEntropyLossRecordItem where
@@ -7660,7 +7769,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLoss.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLoss.html
+
 
 burn::nn::loss# Struct CrossEntropyLoss
 `pub struct CrossEntropyLoss where
@@ -7763,7 +7873,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossConfig.html
+
 
 burn::nn::loss# Struct CrossEntropyLossConfig
 `pub struct CrossEntropyLossConfig {
@@ -7854,7 +7965,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossRecord.html
+
 
 burn::nn::loss# Struct CrossEntropyLossRecord
 `pub struct CrossEntropyLossRecord where
@@ -7899,7 +8011,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.CrossEntropyLossRecordItem.html
+
 
 burn::nn::loss# Struct CrossEntropyLossRecordItem
 `pub struct CrossEntropyLossRecordItem where
@@ -7952,7 +8065,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.HuberLoss.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.HuberLoss.html
+
 
 burn::nn::loss# Struct HuberLoss
 `pub struct HuberLoss {
@@ -8074,7 +8188,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.HuberLossConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.HuberLossConfig.html
+
 
 burn::nn::loss# Struct HuberLossConfig
 `pub struct HuberLossConfig {
@@ -8146,7 +8261,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/loss/struct.MseLoss.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/struct.MseLoss.html
+
 
 burn::nn::loss# Struct MseLoss
 `pub struct MseLoss;
@@ -8229,7 +8345,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/loss/enum.Reduction.html
+# Page : https://docs.rs/burn/latest/burn/nn/loss/enum.Reduction.html
+
 
 burn::nn::loss# Enum Reduction
 `pub enum Reduction {
@@ -8280,7 +8397,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/index.html
+
 
 burn::nn# Module lstm
 Expand descriptionLong Short-Term Memory module.
@@ -8294,7 +8412,8 @@ Expand descriptionLong Short-Term Memory module.
 - LstmRecordThe record type for the module.
 - LstmRecordItemThe record item type for the module.
 - LstmStateA LstmState is used to store cell state and hidden state in LSTM.
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstm.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstm.html
+
 
 burn::nn::lstm# Struct BiLstm
 `pub struct BiLstm where
@@ -8405,7 +8524,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmConfig.html
+
 
 burn::nn::lstm# Struct BiLstmConfig
 `pub struct BiLstmConfig {
@@ -8488,7 +8608,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmRecord.html
+
 
 burn::nn::lstm# Struct BiLstmRecord
 `pub struct BiLstmRecord where
@@ -8536,7 +8657,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.BiLstmRecordItem.html
+
 
 burn::nn::lstm# Struct BiLstmRecordItem
 `pub struct BiLstmRecordItem where
@@ -8594,7 +8716,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.Lstm.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.Lstm.html
+
 
 burn::nn::lstm# Struct Lstm
 `pub struct Lstm where
@@ -8707,7 +8830,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmConfig.html
+
 
 burn::nn::lstm# Struct LstmConfig
 `pub struct LstmConfig {
@@ -8790,7 +8914,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmRecord.html
+
 
 burn::nn::lstm# Struct LstmRecord
 `pub struct LstmRecord where
@@ -8840,7 +8965,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmRecordItem.html
+
 
 burn::nn::lstm# Struct LstmRecordItem
 `pub struct LstmRecordItem where
@@ -8900,7 +9026,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmState.html
+# Page : https://docs.rs/burn/latest/burn/nn/lstm/struct.LstmState.html
+
 
 burn::nn::lstm# Struct LstmState
 `pub struct LstmState where
@@ -8950,7 +9077,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/index.html
+
 
 burn::nn# Module pool
 Expand descriptionPooling module
@@ -8967,7 +9095,8 @@ Expand descriptionPooling module
 - MaxPool1dConfigConfiguration to create a 1D max pooling layer using the init function.
 - MaxPool2dApplies a 2D max pooling over input tensors.
 - MaxPool2dConfigConfiguration to create a 2D max pooling layer using the init function.
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool1d.html
+
 
 burn::nn::pool# Struct AdaptiveAvgPool1d
 `pub struct AdaptiveAvgPool1d {
@@ -9057,7 +9186,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool1dConfig.html
+
 
 burn::nn::pool# Struct AdaptiveAvgPool1dConfig
 `pub struct AdaptiveAvgPool1dConfig {
@@ -9128,7 +9258,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool2d.html
+
 
 burn::nn::pool# Struct AdaptiveAvgPool2d
 `pub struct AdaptiveAvgPool2d {
@@ -9218,7 +9349,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AdaptiveAvgPool2dConfig.html
+
 
 burn::nn::pool# Struct AdaptiveAvgPool2dConfig
 `pub struct AdaptiveAvgPool2dConfig {
@@ -9289,7 +9421,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool1d.html
+
 
 burn::nn::pool# Struct AvgPool1d
 `pub struct AvgPool1d {
@@ -9391,7 +9524,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool1dConfig.html
+
 
 burn::nn::pool# Struct AvgPool1dConfig
 `pub struct AvgPool1dConfig {
@@ -9480,7 +9614,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool2d.html
+
 
 burn::nn::pool# Struct AvgPool2d
 `pub struct AvgPool2d {
@@ -9582,7 +9717,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.AvgPool2dConfig.html
+
 
 burn::nn::pool# Struct AvgPool2dConfig
 `pub struct AvgPool2dConfig {
@@ -9671,7 +9807,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool1d.html
+
 
 burn::nn::pool# Struct MaxPool1d
 `pub struct MaxPool1d {
@@ -9764,7 +9901,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool1dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool1dConfig.html
+
 
 burn::nn::pool# Struct MaxPool1dConfig
 `pub struct MaxPool1dConfig {
@@ -9853,7 +9991,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool2d.html
+
 
 burn::nn::pool# Struct MaxPool2d
 `pub struct MaxPool2d {
@@ -9946,7 +10085,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool2dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/pool/struct.MaxPool2dConfig.html
+
 
 burn::nn::pool# Struct MaxPool2dConfig
 `pub struct MaxPool2dConfig {
@@ -10035,7 +10175,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/index.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/index.html
+
 
 burn::nn# Module transformer
 Expand descriptionTransformer module
@@ -10062,7 +10203,8 @@ Expand descriptionTransformer module
 - TransformerEncoderLayerRecordItemThe record item type for the module.
 - TransformerEncoderRecordThe record type for the module.
 - TransformerEncoderRecordItemThe record item type for the module.
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForward.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForward.html
+
 
 burn::nn::transformer# Struct PositionWiseFeedForward
 `pub struct PositionWiseFeedForward where
@@ -10178,7 +10320,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardConfig.html
+
 
 burn::nn::transformer# Struct PositionWiseFeedForwardConfig
 `pub struct PositionWiseFeedForwardConfig {
@@ -10265,7 +10408,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardRecord.html
+
 
 burn::nn::transformer# Struct PositionWiseFeedForwardRecord
 `pub struct PositionWiseFeedForwardRecord where
@@ -10314,7 +10458,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.PositionWiseFeedForwardRecordItem.html
+
 
 burn::nn::transformer# Struct PositionWiseFeedForwardRecordItem
 `pub struct PositionWiseFeedForwardRecordItem where
@@ -10373,7 +10518,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoder.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoder.html
+
 
 burn::nn::transformer# Struct TransformerDecoder
 `pub struct TransformerDecoder where
@@ -10481,7 +10627,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderAutoregressiveCache.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderAutoregressiveCache.html
+
 
 burn::nn::transformer# Struct TransformerDecoderAutoregressiveCache
 `pub struct TransformerDecoderAutoregressiveCache where
@@ -10523,7 +10670,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderConfig.html
+
 
 burn::nn::transformer# Struct TransformerDecoderConfig
 `pub struct TransformerDecoderConfig {
@@ -10635,7 +10783,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderInput.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderInput.html
+
 
 burn::nn::transformer# Struct TransformerDecoderInput
 `pub struct TransformerDecoderInput where
@@ -10698,7 +10847,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayer.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayer.html
+
 
 burn::nn::transformer# Struct TransformerDecoderLayer
 `pub struct TransformerDecoderLayer where
@@ -10778,7 +10928,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayerRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayerRecord.html
+
 
 burn::nn::transformer# Struct TransformerDecoderLayerRecord
 `pub struct TransformerDecoderLayerRecord where
@@ -10831,7 +10982,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayerRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderLayerRecordItem.html
+
 
 burn::nn::transformer# Struct TransformerDecoderLayerRecordItem
 `pub struct TransformerDecoderLayerRecordItem where
@@ -10894,7 +11046,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderRecord.html
+
 
 burn::nn::transformer# Struct TransformerDecoderRecord
 `pub struct TransformerDecoderRecord where
@@ -10947,7 +11100,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerDecoderRecordItem.html
+
 
 burn::nn::transformer# Struct TransformerDecoderRecordItem
 `pub struct TransformerDecoderRecordItem where
@@ -11010,7 +11164,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoder.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoder.html
+
 
 burn::nn::transformer# Struct TransformerEncoder
 `pub struct TransformerEncoder where
@@ -11134,7 +11289,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderAutoregressiveCache.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderAutoregressiveCache.html
+
 
 burn::nn::transformer# Struct TransformerEncoderAutoregressiveCache
 `pub struct TransformerEncoderAutoregressiveCache where
@@ -11176,7 +11332,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderConfig.html
+
 
 burn::nn::transformer# Struct TransformerEncoderConfig
 `pub struct TransformerEncoderConfig {
@@ -11288,7 +11445,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderInput.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderInput.html
+
 
 burn::nn::transformer# Struct TransformerEncoderInput
 `pub struct TransformerEncoderInput where
@@ -11344,7 +11502,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayer.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayer.html
+
 
 burn::nn::transformer# Struct TransformerEncoderLayer
 `pub struct TransformerEncoderLayer where
@@ -11424,7 +11583,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayerRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayerRecord.html
+
 
 burn::nn::transformer# Struct TransformerEncoderLayerRecord
 `pub struct TransformerEncoderLayerRecord where
@@ -11475,7 +11635,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayerRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderLayerRecordItem.html
+
 
 burn::nn::transformer# Struct TransformerEncoderLayerRecordItem
 `pub struct TransformerEncoderLayerRecordItem where
@@ -11536,7 +11697,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderRecord.html
+
 
 burn::nn::transformer# Struct TransformerEncoderRecord
 `pub struct TransformerEncoderRecord where
@@ -11589,7 +11751,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/transformer/struct.TransformerEncoderRecordItem.html
+
 
 burn::nn::transformer# Struct TransformerEncoderRecordItem
 `pub struct TransformerEncoderRecordItem where
@@ -11652,7 +11815,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNorm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNorm.html
+
 
 burn::nn# Struct BatchNorm
 `pub struct BatchNorm where
@@ -11773,7 +11937,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormConfig.html
+
 
 burn::nn# Struct BatchNormConfig
 `pub struct BatchNormConfig {
@@ -11855,7 +12020,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormRecord.html
+
 
 burn::nn# Struct BatchNormRecord
 `pub struct BatchNormRecord where
@@ -11906,7 +12072,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BatchNormRecordItem.html
+
 
 burn::nn# Struct BatchNormRecordItem
 `pub struct BatchNormRecordItem where
@@ -11967,7 +12134,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstm.html
+
 
 burn::nn# Struct BiLstm
 `pub struct BiLstm where
@@ -12078,7 +12246,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmConfig.html
+
 
 burn::nn# Struct BiLstmConfig
 `pub struct BiLstmConfig {
@@ -12161,7 +12330,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmRecord.html
+
 
 burn::nn# Struct BiLstmRecord
 `pub struct BiLstmRecord where
@@ -12209,7 +12379,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.BiLstmRecordItem.html
+
 
 burn::nn# Struct BiLstmRecordItem
 `pub struct BiLstmRecordItem where
@@ -12267,7 +12438,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Dropout.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Dropout.html
+
 
 burn::nn# Struct Dropout
 `pub struct Dropout {
@@ -12359,7 +12531,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.DropoutConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.DropoutConfig.html
+
 
 burn::nn# Struct DropoutConfig
 `pub struct DropoutConfig {
@@ -12431,7 +12604,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Embedding.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Embedding.html
+
 
 burn::nn# Struct Embedding
 `pub struct Embedding where
@@ -12526,7 +12700,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingConfig.html
+
 
 burn::nn# Struct EmbeddingConfig
 `pub struct EmbeddingConfig {
@@ -12606,7 +12781,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingRecord.html
+
 
 burn::nn# Struct EmbeddingRecord
 `pub struct EmbeddingRecord where
@@ -12652,7 +12828,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.EmbeddingRecordItem.html
+
 
 burn::nn# Struct EmbeddingRecordItem
 `pub struct EmbeddingRecordItem where
@@ -12708,7 +12885,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GateController.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GateController.html
+
 
 burn::nn# Struct GateController
 `pub struct GateController where
@@ -12813,7 +12991,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GateControllerRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GateControllerRecord.html
+
 
 burn::nn# Struct GateControllerRecord
 `pub struct GateControllerRecord where
@@ -12860,7 +13039,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GateControllerRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GateControllerRecordItem.html
+
 
 burn::nn# Struct GateControllerRecordItem
 `pub struct GateControllerRecordItem where
@@ -12917,7 +13097,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Gelu.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Gelu.html
+
 
 burn::nn# Struct Gelu
 `pub struct Gelu;
@@ -13001,7 +13182,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNorm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNorm.html
+
 
 burn::nn# Struct GroupNorm
 `pub struct GroupNorm where
@@ -13119,7 +13301,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormConfig.html
+
 
 burn::nn# Struct GroupNormConfig
 `pub struct GroupNormConfig {
@@ -13209,7 +13392,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormRecord.html
+
 
 burn::nn# Struct GroupNormRecord
 `pub struct GroupNormRecord where
@@ -13260,7 +13444,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.GroupNormRecordItem.html
+
 
 burn::nn# Struct GroupNormRecordItem
 `pub struct GroupNormRecordItem where
@@ -13321,7 +13506,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.HardSigmoid.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.HardSigmoid.html
+
 
 burn::nn# Struct HardSigmoid
 `pub struct HardSigmoid {
@@ -13412,7 +13598,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.HardSigmoidConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.HardSigmoidConfig.html
+
 
 burn::nn# Struct HardSigmoidConfig
 `pub struct HardSigmoidConfig {
@@ -13490,7 +13677,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNorm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNorm.html
+
 
 burn::nn# Struct InstanceNorm
 `pub struct InstanceNorm where
@@ -13590,7 +13778,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormConfig.html
+
 
 burn::nn# Struct InstanceNormConfig
 `pub struct InstanceNormConfig {
@@ -13677,7 +13866,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormRecord.html
+
 
 burn::nn# Struct InstanceNormRecord
 `pub struct InstanceNormRecord where
@@ -13727,7 +13917,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.InstanceNormRecordItem.html
+
 
 burn::nn# Struct InstanceNormRecordItem
 `pub struct InstanceNormRecordItem where
@@ -13787,7 +13978,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNorm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNorm.html
+
 
 burn::nn# Struct LayerNorm
 `pub struct LayerNorm where
@@ -13898,7 +14090,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormConfig.html
+
 
 burn::nn# Struct LayerNormConfig
 `pub struct LayerNormConfig {
@@ -13976,7 +14169,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormRecord.html
+
 
 burn::nn# Struct LayerNormRecord
 `pub struct LayerNormRecord where
@@ -14024,7 +14218,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LayerNormRecordItem.html
+
 
 burn::nn# Struct LayerNormRecordItem
 `pub struct LayerNormRecordItem where
@@ -14082,7 +14277,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LeakyRelu.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LeakyRelu.html
+
 
 burn::nn# Struct LeakyRelu
 `pub struct LeakyRelu {
@@ -14170,7 +14366,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LeakyReluConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LeakyReluConfig.html
+
 
 burn::nn# Struct LeakyReluConfig
 `pub struct LeakyReluConfig {
@@ -14244,7 +14441,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Linear.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Linear.html
+
 
 burn::nn# Struct Linear
 `pub struct Linear where
@@ -14344,7 +14542,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LinearConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LinearConfig.html
+
 
 burn::nn# Struct LinearConfig
 `pub struct LinearConfig {
@@ -14429,7 +14628,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LinearRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LinearRecord.html
+
 
 burn::nn# Struct LinearRecord
 `pub struct LinearRecord where
@@ -14476,7 +14676,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LinearRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LinearRecordItem.html
+
 
 burn::nn# Struct LinearRecordItem
 `pub struct LinearRecordItem where
@@ -14533,7 +14734,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Lstm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Lstm.html
+
 
 burn::nn# Struct Lstm
 `pub struct Lstm where
@@ -14646,7 +14848,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LstmConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LstmConfig.html
+
 
 burn::nn# Struct LstmConfig
 `pub struct LstmConfig {
@@ -14729,7 +14932,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LstmRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LstmRecord.html
+
 
 burn::nn# Struct LstmRecord
 `pub struct LstmRecord where
@@ -14779,7 +14983,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LstmRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LstmRecordItem.html
+
 
 burn::nn# Struct LstmRecordItem
 `pub struct LstmRecordItem where
@@ -14839,7 +15044,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.LstmState.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.LstmState.html
+
 
 burn::nn# Struct LstmState
 `pub struct LstmState where
@@ -14889,7 +15095,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PRelu.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PRelu.html
+
 
 burn::nn# Struct PRelu
 `pub struct PRelu where
@@ -14982,7 +15189,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PReluConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PReluConfig.html
+
 
 burn::nn# Struct PReluConfig
 `pub struct PReluConfig {
@@ -15061,7 +15269,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PReluRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PReluRecord.html
+
 
 burn::nn# Struct PReluRecord
 `pub struct PReluRecord where
@@ -15108,7 +15317,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PReluRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PReluRecordItem.html
+
 
 burn::nn# Struct PReluRecordItem
 `pub struct PReluRecordItem where
@@ -15165,7 +15375,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncoding.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncoding.html
+
 
 burn::nn# Struct PositionalEncoding
 `pub struct PositionalEncoding where
@@ -15276,7 +15487,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingConfig.html
+
 
 burn::nn# Struct PositionalEncodingConfig
 `pub struct PositionalEncodingConfig {
@@ -15363,7 +15575,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingRecord.html
+
 
 burn::nn# Struct PositionalEncodingRecord
 `pub struct PositionalEncodingRecord where
@@ -15407,7 +15620,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.PositionalEncodingRecordItem.html
+
 
 burn::nn# Struct PositionalEncodingRecordItem
 `pub struct PositionalEncodingRecordItem where
@@ -15459,7 +15673,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Relu.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Relu.html
+
 
 burn::nn# Struct Relu
 `pub struct Relu;
@@ -15543,7 +15758,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNorm.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNorm.html
+
 
 burn::nn# Struct RmsNorm
 `pub struct RmsNorm where
@@ -15654,7 +15870,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormConfig.html
+
 
 burn::nn# Struct RmsNormConfig
 `pub struct RmsNormConfig {
@@ -15734,7 +15951,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormRecord.html
+
 
 burn::nn# Struct RmsNormRecord
 `pub struct RmsNormRecord where
@@ -15781,7 +15999,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RmsNormRecordItem.html
+
 
 burn::nn# Struct RmsNormRecordItem
 `pub struct RmsNormRecordItem where
@@ -15838,7 +16057,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncoding.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncoding.html
+
 
 burn::nn# Struct RotaryEncoding
 `pub struct RotaryEncoding where
@@ -15961,7 +16181,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingConfig.html
+
 
 burn::nn# Struct RotaryEncodingConfig
 `pub struct RotaryEncodingConfig {
@@ -16051,7 +16272,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingRecord.html
+
 
 burn::nn# Struct RotaryEncodingRecord
 `pub struct RotaryEncodingRecord where
@@ -16095,7 +16317,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.RotaryEncodingRecordItem.html
+
 
 burn::nn# Struct RotaryEncodingRecordItem
 `pub struct RotaryEncodingRecordItem where
@@ -16147,7 +16370,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Sigmoid.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Sigmoid.html
+
 
 burn::nn# Struct Sigmoid
 `pub struct Sigmoid;
@@ -16231,7 +16455,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGlu.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGlu.html
+
 
 burn::nn# Struct SwiGlu
 `pub struct SwiGlu where
@@ -16330,7 +16555,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluConfig.html
+
 
 burn::nn# Struct SwiGluConfig
 `pub struct SwiGluConfig {
@@ -16416,7 +16642,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluRecord.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluRecord.html
+
 
 burn::nn# Struct SwiGluRecord
 `pub struct SwiGluRecord where
@@ -16463,7 +16690,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.SwiGluRecordItem.html
+
 
 burn::nn# Struct SwiGluRecordItem
 `pub struct SwiGluRecordItem where
@@ -16520,7 +16748,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Tanh.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Tanh.html
+
 
 burn::nn# Struct Tanh
 `pub struct Tanh;
@@ -16604,7 +16833,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Unfold4d.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Unfold4d.html
+
 
 burn::nn# Struct Unfold4d
 `pub struct Unfold4d {
@@ -16698,7 +16928,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/nn/struct.Unfold4dConfig.html
+# Page : https://docs.rs/burn/latest/burn/nn/struct.Unfold4dConfig.html
+
 
 burn::nn# Struct Unfold4dConfig
 `pub struct Unfold4dConfig {
@@ -16783,7 +17014,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/enum.Initializer.html
+# Page : https://docs.rs/burn/latest/burn/nn/enum.Initializer.html
+
 
 burn::nn# Enum Initializer
 `pub enum Initializer {
@@ -16941,7 +17173,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig1d.html
+# Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig1d.html
+
 
 burn::nn# Enum PaddingConfig1d
 `pub enum PaddingConfig1d {
@@ -17022,7 +17255,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig2d.html
+# Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig2d.html
+
 
 burn::nn# Enum PaddingConfig2d
 `pub enum PaddingConfig2d {
@@ -17103,7 +17337,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig3d.html
+# Page : https://docs.rs/burn/latest/burn/nn/enum.PaddingConfig3d.html
+
 
 burn::nn# Enum PaddingConfig3d
 `pub enum PaddingConfig3d {
@@ -17184,7 +17419,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/nn/fn.generate_sinusoids.html
+# Page : https://docs.rs/burn/latest/burn/nn/fn.generate_sinusoids.html
+
 
 burn::nn# Function generate_sinusoids
 `pub fn generate_sinusoids where
@@ -17208,7 +17444,8 @@ LANGUAGE MODELING WITH NN.TRANSFORMER AND TORCHTEXT
 ## Returns
 
 A tensor of shape [length, d_model] containing the sinusoids.
-## Page : https://docs.rs/burn/latest/burn/optim/index.html
+# Page : https://docs.rs/burn/latest/burn/optim/index.html
+
 
 burn# Module optim
 Expand descriptionOptimizer module.
@@ -17258,14 +17495,16 @@ The optimizer can be configured with RmsPropConfig.
 - OptimizerGeneral trait to optimize module.
 - SimpleOptimizerSimple optimizer is an opinionated trait to simplify the process of implementing an
 optimizer.
-## Page : https://docs.rs/burn/latest/burn/optim/adaptor/index.html
+# Page : https://docs.rs/burn/latest/burn/optim/adaptor/index.html
+
 
 burn::optim# Module adaptor
 Expand descriptionAdaptor module for optimizers.
 ## Structs
 - OptimizerAdaptorWrapper struct that adapts any simple optimizer into
 an optimizer.
-## Page : https://docs.rs/burn/latest/burn/optim/adaptor/struct.OptimizerAdaptor.html
+# Page : https://docs.rs/burn/latest/burn/optim/adaptor/struct.OptimizerAdaptor.html
+
 
 burn::optim::adaptor# Struct OptimizerAdaptor
 `pub struct OptimizerAdaptor where
@@ -17352,7 +17591,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/decay/index.html
+# Page : https://docs.rs/burn/latest/burn/optim/decay/index.html
+
 
 burn::optim# Module decay
 Expand descriptionWeight decay module for optimizers.
@@ -17361,7 +17601,8 @@ Expand descriptionWeight decay module for optimizers.
 - WeightDecayConfigConfiguration to create weight decay.
 - WeightDecayStateState of weight decay.
 - WeightDecayStateItemThe record item type for the module.
-## Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecay.html
+# Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecay.html
+
 
 burn::optim::decay# Struct WeightDecay
 `pub struct WeightDecay { /* private fields */ }
@@ -17429,7 +17670,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayConfig.html
+
 
 burn::optim::decay# Struct WeightDecayConfig
 `pub struct WeightDecayConfig {
@@ -17498,7 +17740,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayState.html
+# Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayState.html
+
 
 burn::optim::decay# Struct WeightDecayState
 `pub struct WeightDecayState where
@@ -17576,7 +17819,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/decay/struct.WeightDecayStateItem.html
+
 
 burn::optim::decay# Struct WeightDecayStateItem
 `pub struct WeightDecayStateItem where
@@ -17632,7 +17876,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/momentum/index.html
+# Page : https://docs.rs/burn/latest/burn/optim/momentum/index.html
+
 
 burn::optim# Module momentum
 Expand descriptionMomentum module for optimizers.
@@ -17641,7 +17886,8 @@ Expand descriptionMomentum module for optimizers.
 - MomentumConfigConfiguration to create momentum.
 - MomentumStateState of momentum.
 - MomentumStateItemThe record item type for the module.
-## Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.Momentum.html
+# Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.Momentum.html
+
 
 burn::optim::momentum# Struct Momentum
 `pub struct Momentum where
@@ -17717,7 +17963,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumConfig.html
+
 
 burn::optim::momentum# Struct MomentumConfig
 `pub struct MomentumConfig {
@@ -17797,7 +18044,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumState.html
+# Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumState.html
+
 
 burn::optim::momentum# Struct MomentumState
 `pub struct MomentumState where
@@ -17873,7 +18121,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/momentum/struct.MomentumStateItem.html
+
 
 burn::optim::momentum# Struct MomentumStateItem
 `pub struct MomentumStateItem where
@@ -17929,7 +18178,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/record/index.html
+# Page : https://docs.rs/burn/latest/burn/optim/record/index.html
+
 
 burn::optim# Module record
 Expand descriptionRecord module for optimizers.
@@ -17938,7 +18188,8 @@ Expand descriptionRecord module for optimizers.
 - AdaptorRecordItemOptimizer adaptor record item.
 - AdaptorRecordItemV1Optimizer adaptor record item.
 - AdaptorRecordV1Optimizer adaptor record item.
-## Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecord.html
+# Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecord.html
+
 
 burn::optim::record# Enum AdaptorRecord
 `pub enum AdaptorRecord where
@@ -18015,7 +18266,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordItem.html
+
 
 burn::optim::record# Enum AdaptorRecordItem
 `pub enum AdaptorRecordItem where
@@ -18072,7 +18324,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordItemV1.html
+# Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordItemV1.html
+
 
 burn::optim::record# Enum AdaptorRecordItemV1
 `pub enum AdaptorRecordItemV1 where
@@ -18137,7 +18390,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordV1.html
+# Page : https://docs.rs/burn/latest/burn/optim/record/enum.AdaptorRecordV1.html
+
 
 burn::optim::record# Enum AdaptorRecordV1
 `pub enum AdaptorRecordV1 where
@@ -18223,7 +18477,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGrad.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGrad.html
+
 
 burn::optim# Struct AdaGrad
 `pub struct AdaGrad { /* private fields */ }
@@ -18275,7 +18530,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradConfig.html
+
 
 burn::optim# Struct AdaGradConfig
 `pub struct AdaGradConfig { /* private fields */ }
@@ -18354,7 +18610,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradState.html
+
 
 burn::optim# Struct AdaGradState
 `pub struct AdaGradState where
@@ -18417,7 +18674,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaGradStateItem.html
+
 
 burn::optim# Struct AdaGradStateItem
 `pub struct AdaGradStateItem where
@@ -18473,7 +18731,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.Adam.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.Adam.html
+
 
 burn::optim# Struct Adam
 `pub struct Adam { /* private fields */ }
@@ -18525,7 +18784,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamConfig.html
+
 
 burn::optim# Struct AdamConfig
 `pub struct AdamConfig { /* private fields */ }
@@ -18605,7 +18865,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamState.html
+
 
 burn::optim# Struct AdamState
 `pub struct AdamState where
@@ -18670,7 +18931,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamStateItem.html
+
 
 burn::optim# Struct AdamStateItem
 `pub struct AdamStateItem where
@@ -18726,7 +18988,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamW.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamW.html
+
 
 burn::optim# Struct AdamW
 `pub struct AdamW { /* private fields */ }
@@ -18779,7 +19042,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWConfig.html
+
 
 burn::optim# Struct AdamWConfig
 `pub struct AdamWConfig { /* private fields */ }
@@ -18857,7 +19121,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWState.html
+
 
 burn::optim# Struct AdamWState
 `pub struct AdamWState where
@@ -18922,7 +19187,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdamWStateItem.html
+
 
 burn::optim# Struct AdamWStateItem
 `pub struct AdamWStateItem where
@@ -18978,7 +19244,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaptiveMomentumState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaptiveMomentumState.html
+
 
 burn::optim# Struct AdaptiveMomentumState
 `pub struct AdaptiveMomentumState where
@@ -19061,7 +19328,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.AdaptiveMomentumStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.AdaptiveMomentumStateItem.html
+
 
 burn::optim# Struct AdaptiveMomentumStateItem
 `pub struct AdaptiveMomentumStateItem where
@@ -19119,7 +19387,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.CenteredState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.CenteredState.html
+
 
 burn::optim# Struct CenteredState
 `pub struct CenteredState where
@@ -19199,7 +19468,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.CenteredStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.CenteredStateItem.html
+
 
 burn::optim# Struct CenteredStateItem
 `pub struct CenteredStateItem where
@@ -19256,7 +19526,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.GradientsAccumulator.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.GradientsAccumulator.html
+
 
 burn::optim# Struct GradientsAccumulator
 `pub struct GradientsAccumulator /* private fields */ }
@@ -19301,7 +19572,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.GradientsParams.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.GradientsParams.html
+
 
 burn::optim# Struct GradientsParams
 `pub struct GradientsParams { /* private fields */ }
@@ -19374,7 +19646,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.LrDecayState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.LrDecayState.html
+
 
 burn::optim# Struct LrDecayState
 `pub struct LrDecayState where
@@ -19447,7 +19720,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.LrDecayStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.LrDecayStateItem.html
+
 
 burn::optim# Struct LrDecayStateItem
 `pub struct LrDecayStateItem where
@@ -19504,7 +19778,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsProp.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsProp.html
+
 
 burn::optim# Struct RmsProp
 `pub struct RmsProp { /* private fields */ }
@@ -19557,7 +19832,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropConfig.html
+
 
 burn::optim# Struct RmsPropConfig
 `pub struct RmsPropConfig { /* private fields */ }
@@ -19638,7 +19914,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentum.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentum.html
+
 
 burn::optim# Struct RmsPropMomentum
 `pub struct RmsPropMomentum { /* private fields */ }
@@ -19690,7 +19967,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentumState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentumState.html
+
 
 burn::optim# Struct RmsPropMomentumState
 `pub struct RmsPropMomentumState where
@@ -19768,7 +20046,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentumStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropMomentumStateItem.html
+
 
 burn::optim# Struct RmsPropMomentumStateItem
 `pub struct RmsPropMomentumStateItem where
@@ -19824,7 +20103,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropState.html
+
 
 burn::optim# Struct RmsPropState
 `pub struct RmsPropState where
@@ -19892,7 +20172,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.RmsPropStateItem.html
+
 
 burn::optim# Struct RmsPropStateItem
 `pub struct RmsPropStateItem where
@@ -19950,7 +20231,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.Sgd.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.Sgd.html
+
 
 burn::optim# Struct Sgd
 `pub struct Sgd where
@@ -20007,7 +20289,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.SgdConfig.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.SgdConfig.html
+
 
 burn::optim# Struct SgdConfig
 `pub struct SgdConfig { /* private fields */ }
@@ -20083,7 +20366,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.SgdState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.SgdState.html
+
 
 burn::optim# Struct SgdState
 `pub struct SgdState where
@@ -20148,7 +20432,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.SgdStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.SgdStateItem.html
+
 
 burn::optim# Struct SgdStateItem
 `pub struct SgdStateItem where
@@ -20204,7 +20489,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/struct.SquareAvgState.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.SquareAvgState.html
+
 
 burn::optim# Struct SquareAvgState
 `pub struct SquareAvgState where
@@ -20282,7 +20568,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/optim/struct.SquareAvgStateItem.html
+# Page : https://docs.rs/burn/latest/burn/optim/struct.SquareAvgStateItem.html
+
 
 burn::optim# Struct SquareAvgStateItem
 `pub struct SquareAvgStateItem where
@@ -20338,7 +20625,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/optim/trait.Optimizer.html
+# Page : https://docs.rs/burn/latest/burn/optim/trait.Optimizer.html
+
 
 burn::optim# Trait Optimizer
 `pub trait Optimizer where
@@ -20360,7 +20648,8 @@ Source`impl where
     B: AutodiffBackend,
     M: AutodiffModule `
 Sourcetype Record = HashMap
-## Page : https://docs.rs/burn/latest/burn/optim/trait.SimpleOptimizer.html
+# Page : https://docs.rs/burn/latest/burn/optim/trait.SimpleOptimizer.html
+
 
 burn::optim# Trait SimpleOptimizer
 `pub trait SimpleOptimizer where
@@ -20391,7 +20680,8 @@ Sourcetype State Source`impl where
 Sourcetype State Source`impl where
     B: Backend,`
 Sourcetype State
-## Page : https://docs.rs/burn/latest/burn/prelude/index.html
+# Page : https://docs.rs/burn/latest/burn/prelude/index.html
+
 
 burn# Module prelude
 Expand descriptionStructs and macros used by most projects. Add `use burn::prelude::*
@@ -20414,7 +20704,8 @@ Burn.
 ## Derive Macros
 - ConfigDerive macro for the config.
 - ModuleDerive macro for the module.
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.Bool.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.Bool.html
+
 
 burn::prelude# Struct Bool
 `pub struct Bool;
@@ -20506,7 +20797,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.Float.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.Float.html
+
 
 burn::prelude# Struct Float
 `pub struct Float;
@@ -20670,7 +20962,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.Int.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.Int.html
+
 
 burn::prelude# Struct Int
 `pub struct Int;
@@ -20833,7 +21126,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.Shape.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.Shape.html
+
 
 burn::prelude# Struct Shape
 `pub struct Shape {
@@ -20909,7 +21203,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.Tensor.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.Tensor.html
+
 
 burn::prelude# Struct Tensor
 `pub struct Tensor where
@@ -23794,7 +24089,8 @@ Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
 Source`impl where
     T: Sub `
-## Page : https://docs.rs/burn/latest/burn/prelude/struct.TensorData.html
+# Page : https://docs.rs/burn/latest/burn/prelude/struct.TensorData.html
+
 
 burn::prelude# Struct TensorData
 `pub struct TensorData {
@@ -23987,7 +24283,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/prelude/trait.Backend.html
+# Page : https://docs.rs/burn/latest/burn/prelude/trait.Backend.html
+
 
 burn::prelude# Trait Backend
 `pub trait Backend:
@@ -24058,7 +24355,8 @@ Sourcefn ad_enabled() -&gt; boolIf autodiff is enabled.
 Sourcefn sync(_device: &amp;Self::Device)Sync the backend, ensure that all computation are finished.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/prelude/trait.Config.html
+# Page : https://docs.rs/burn/latest/burn/prelude/trait.Config.html
+
 
 burn::prelude# Trait Config
 `pub trait Config: Serialize + DeserializeOwned {
@@ -24152,7 +24450,8 @@ Source`impl Config for AdamConfig`
 Source`impl Config for AdamWConfig`
 Source`impl Config for RmsPropConfig`
 Source`impl Config for SgdConfig`
-## Page : https://docs.rs/burn/latest/burn/prelude/trait.ElementConversion.html
+# Page : https://docs.rs/burn/latest/burn/prelude/trait.ElementConversion.html
+
 
 burn::prelude# Trait ElementConversion
 `pub trait ElementConversion {
@@ -24211,7 +24510,8 @@ Sourcefn from_elem where
     E: Element,## Implementors
 Source`impl ElementConversion for bf16`
 Source`impl ElementConversion for f16`
-## Page : https://docs.rs/burn/latest/burn/prelude/trait.Module.html
+# Page : https://docs.rs/burn/latest/burn/prelude/trait.Module.html
+
 
 burn::prelude# Trait Module
 `pub trait Module where
@@ -24634,11 +24934,13 @@ Sourcetype Record = Param Source`impl where
     B: Backend,
     K: BasicOps `
 Sourcetype Record = ConstantRecord
-## Page : https://docs.rs/burn/latest/burn/prelude/type.Device.html
+# Page : https://docs.rs/burn/latest/burn/prelude/type.Device.html
+
 
 burn::prelude# Type Alias Device
 `pub type Device Expand descriptionDevice type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/prelude/derive.Config.html
+# Page : https://docs.rs/burn/latest/burn/prelude/derive.Config.html
+
 
 burn::prelude# Derive Macro Config
 `#[derive(Config)]
@@ -24648,7 +24950,8 @@ burn::prelude# Derive Macro Config
 }
 
 `Expand descriptionDerive macro for the config.
-## Page : https://docs.rs/burn/latest/burn/prelude/derive.Module.html
+# Page : https://docs.rs/burn/latest/burn/prelude/derive.Module.html
+
 
 burn::prelude# Derive Macro Module
 `#[derive(Module)]
@@ -24658,7 +24961,8 @@ burn::prelude# Derive Macro Module
 }
 
 `Expand descriptionDerive macro for the module.
-## Page : https://docs.rs/burn/latest/burn/record/index.html
+# Page : https://docs.rs/burn/latest/burn/record/index.html
+
 
 burn# Module record
 Expand descriptionModule for the recorder.
@@ -24696,7 +25000,8 @@ Expand descriptionModule for the recorder.
 - SensitiveCompactRecorderRecorder optimized for compactness making it a good choice for model deployment.
 ## Derive Macros
 - RecordDerive macro for the record.
-## Page : https://docs.rs/burn/latest/burn/record/struct.BinBytesRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BinBytesRecorder.html
+
 
 burn::record# Struct BinBytesRecorder
 `pub struct BinBytesRecorder where
@@ -24767,7 +25072,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.BinFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BinFileRecorder.html
+
 
 burn::record# Struct BinFileRecorder
 `pub struct BinFileRecorder where
@@ -24838,7 +25144,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.BinGzFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BinGzFileRecorder.html
+
 
 burn::record# Struct BinGzFileRecorder
 `pub struct BinGzFileRecorder where
@@ -24909,7 +25216,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.BurnMetadata.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BurnMetadata.html
+
 
 burn::record# Struct BurnMetadata
 `pub struct BurnMetadata {
@@ -24995,7 +25303,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/record/struct.BurnRecord.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BurnRecord.html
+
 
 burn::record# Struct BurnRecord
 `pub struct BurnRecord where
@@ -25079,7 +25388,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/record/struct.BurnRecordNoItem.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.BurnRecordNoItem.html
+
 
 burn::record# Struct BurnRecordNoItem
 `pub struct BurnRecordNoItem {
@@ -25134,7 +25444,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/record/struct.DoublePrecisionSettings.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.DoublePrecisionSettings.html
+
 
 burn::record# Struct DoublePrecisionSettings
 `pub struct DoublePrecisionSettings;
@@ -25187,7 +25498,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.FullPrecisionSettings.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.FullPrecisionSettings.html
+
 
 burn::record# Struct FullPrecisionSettings
 `pub struct FullPrecisionSettings;
@@ -25240,7 +25552,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.HalfPrecisionSettings.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.HalfPrecisionSettings.html
+
 
 burn::record# Struct HalfPrecisionSettings
 `pub struct HalfPrecisionSettings;
@@ -25293,7 +25606,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.JsonGzFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.JsonGzFileRecorder.html
+
 
 burn::record# Struct JsonGzFileRecorder
 `pub struct JsonGzFileRecorder where
@@ -25364,7 +25678,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkBytesRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkBytesRecorder.html
+
 
 burn::record# Struct NamedMpkBytesRecorder
 `pub struct NamedMpkBytesRecorder where
@@ -25435,7 +25750,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkFileRecorder.html
+
 
 burn::record# Struct NamedMpkFileRecorder
 `pub struct NamedMpkFileRecorder where
@@ -25506,7 +25822,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkGzFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.NamedMpkGzFileRecorder.html
+
 
 burn::record# Struct NamedMpkGzFileRecorder
 `pub struct NamedMpkGzFileRecorder where
@@ -25577,7 +25894,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/struct.ParamSerde.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.ParamSerde.html
+
 
 burn::record# Struct ParamSerde
 `pub struct ParamSerde /* private fields */ }
@@ -25646,7 +25964,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/record/struct.PrettyJsonFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/struct.PrettyJsonFileRecorder.html
+
 
 burn::record# Struct PrettyJsonFileRecorder
 `pub struct PrettyJsonFileRecorder where
@@ -25717,7 +26036,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/enum.RecorderError.html
+# Page : https://docs.rs/burn/latest/burn/record/enum.RecorderError.html
+
 
 burn::record# Enum RecorderError
 `pub enum RecorderError {
@@ -25776,7 +26096,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/record/trait.BytesRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/trait.BytesRecorder.html
+
 
 burn::record# Trait BytesRecorder
 `pub trait BytesRecorder where
@@ -25794,7 +26115,8 @@ Source`impl where
 Source`impl where
     S: PrecisionSettings,
     B: Backend,`
-## Page : https://docs.rs/burn/latest/burn/record/trait.FileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/trait.FileRecorder.html
+
 
 burn::record# Trait FileRecorder
 `pub trait FileRecorder where
@@ -25825,7 +26147,8 @@ Source`impl where
 Source`impl where
     S: PrecisionSettings,
     B: Backend,`
-## Page : https://docs.rs/burn/latest/burn/record/trait.PrecisionSettings.html
+# Page : https://docs.rs/burn/latest/burn/record/trait.PrecisionSettings.html
+
 
 burn::record# Trait PrecisionSettings
 `pub trait PrecisionSettings:
@@ -25847,7 +26170,8 @@ Source`impl PrecisionSettings for DoublePrecisionSettings`
 Sourcetype FloatElem = f64Sourcetype IntElem = i64Source`impl PrecisionSettings for FullPrecisionSettings`
 Sourcetype FloatElem = f32Sourcetype IntElem = i32Source`impl PrecisionSettings for HalfPrecisionSettings`
 Sourcetype FloatElem = f16Sourcetype IntElem = i16
-## Page : https://docs.rs/burn/latest/burn/record/trait.Record.html
+# Page : https://docs.rs/burn/latest/burn/record/trait.Record.html
+
 
 burn::record# Trait Record
 `pub trait Record where
@@ -26098,7 +26422,8 @@ Sourcetype Item Source`impl where
 Sourcetype Item Source`impl where
     O: SimpleOptimizer `
 Sourcetype Item
-## Page : https://docs.rs/burn/latest/burn/record/trait.Recorder.html
+# Page : https://docs.rs/burn/latest/burn/record/trait.Recorder.html
+
 
 burn::record# Trait Recorder
 `pub trait Recorder where
@@ -26188,7 +26513,8 @@ Sourcetype Settings = SSourcetype RecordArgs = PathBufSourcetype RecordOutput = 
     S: PrecisionSettings,
     B: Backend,`
 Sourcetype Settings = SSourcetype RecordArgs = PathBufSourcetype RecordOutput = ()Sourcetype LoadArgs = PathBuf
-## Page : https://docs.rs/burn/latest/burn/record/type.CompactRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.CompactRecorder.html
+
 
 burn::record# Type Alias CompactRecorder
 `pub type CompactRecorder = NamedMpkFileRecorder Expand descriptionRecorder optimized for compactness.
@@ -26198,7 +26524,8 @@ sensitive compact recorder.
 ## Aliased Type
 `struct CompactRecorder { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.DebugRecordSettings.html
+# Page : https://docs.rs/burn/latest/burn/record/type.DebugRecordSettings.html
+
 
 burn::record# Type Alias DebugRecordSettings
 `pub type DebugRecordSettings = PrettyJsonFileRecorder Expand descriptionDebug recorder.
@@ -26207,14 +26534,16 @@ human readable.
 ## Aliased Type
 `struct DebugRecordSettings { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.DefaultFileRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.DefaultFileRecorder.html
+
 
 burn::record# Type Alias DefaultFileRecorder
 `pub type DefaultFileRecorder Expand descriptionDefault file recorder.
 ## Aliased Type
 `struct DefaultFileRecorder /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.DefaultRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.DefaultRecorder.html
+
 
 burn::record# Type Alias DefaultRecorder
 `pub type DefaultRecorder = NamedMpkFileRecorder Expand descriptionDefault recorder.
@@ -26222,21 +26551,24 @@ It uses the named msgpack format for serialization with full precision.
 ## Aliased Type
 `struct DefaultRecorder { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.NoStdInferenceRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.NoStdInferenceRecorder.html
+
 
 burn::record# Type Alias NoStdInferenceRecorder
 `pub type NoStdInferenceRecorder = BinBytesRecorder Expand descriptionInference recorder compatible with no-std.
 ## Aliased Type
 `struct NoStdInferenceRecorder { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.NoStdTrainingRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.NoStdTrainingRecorder.html
+
 
 burn::record# Type Alias NoStdTrainingRecorder
 `pub type NoStdTrainingRecorder = BinFileRecorder Expand descriptionTraining recorder compatible with no-std inference.
 ## Aliased Type
 `struct NoStdTrainingRecorder { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/type.SensitiveCompactRecorder.html
+# Page : https://docs.rs/burn/latest/burn/record/type.SensitiveCompactRecorder.html
+
 
 burn::record# Type Alias SensitiveCompactRecorder
 `pub type SensitiveCompactRecorder = BinGzFileRecorder Expand descriptionRecorder optimized for compactness making it a good choice for model deployment.
@@ -26247,12 +26579,14 @@ for long term data storage.
 ## Aliased Type
 `struct SensitiveCompactRecorder { /* private fields */ }
 `
-## Page : https://docs.rs/burn/latest/burn/record/derive.Record.html
+# Page : https://docs.rs/burn/latest/burn/record/derive.Record.html
+
 
 burn::record# Derive Macro Record
 `#[derive(Record)]
 `Expand descriptionDerive macro for the record.
-## Page : https://docs.rs/burn/latest/burn/serde/index.html
+# Page : https://docs.rs/burn/latest/burn/serde/index.html
+
 
 burn# Crate serde
 Expand description## Serde
@@ -26360,7 +26694,8 @@ by Serde.
 ## Derive Macros
 - Deserialize
 - Serialize
-## Page : https://docs.rs/burn/latest/burn/serde/de/index.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/index.html
+
 
 burn::serde# Module de
 Expand descriptionGeneric data structure deserialization framework.
@@ -26541,7 +26876,8 @@ passed to the `Deserialize
 ` to deserialize the content of a particular enum
 variant.
 - VisitorThis trait represents a visitor that walks through a deserializer.
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/index.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/index.html
+
 
 burn::serde::de# Module value
 Expand descriptionBuilding blocks for deserializing basic values using the `IntoDeserializer
@@ -26641,7 +26977,8 @@ a `u128
 - UsizeDeserializerA deserializer holding
 a `usize
 `.
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BoolDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BoolDeserializer.html
+
 
 burn::serde::de::value# Struct BoolDeserializer
 `pub struct BoolDeserializer /* private fields */ }
@@ -26801,7 +27138,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BorrowedBytesDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BorrowedBytesDeserializer.html
+
 
 burn::serde::de::value# Struct BorrowedBytesDeserializer
 `pub struct BorrowedBytesDeserializer /* private fields */ }
@@ -26963,7 +27301,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BorrowedStrDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BorrowedStrDeserializer.html
+
 
 burn::serde::de::value# Struct BorrowedStrDeserializer
 `pub struct BorrowedStrDeserializer /* private fields */ }
@@ -27133,7 +27472,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BytesDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.BytesDeserializer.html
+
 
 burn::serde::de::value# Struct BytesDeserializer
 `pub struct BytesDeserializer /* private fields */ }
@@ -27294,7 +27634,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.CharDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.CharDeserializer.html
+
 
 burn::serde::de::value# Struct CharDeserializer
 `pub struct CharDeserializer /* private fields */ }
@@ -27454,7 +27795,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.CowStrDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.CowStrDeserializer.html
+
 
 burn::serde::de::value# Struct CowStrDeserializer
 `pub struct CowStrDeserializer /* private fields */ }
@@ -27621,7 +27963,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.EnumAccessDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.EnumAccessDeserializer.html
+
 
 burn::serde::de::value# Struct EnumAccessDeserializer
 `pub struct EnumAccessDeserializer /* private fields */ }
@@ -27787,7 +28130,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.Error.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.Error.html
+
 
 burn::serde::de::value# Struct Error
 `pub struct Error { /* private fields */ }
@@ -27873,7 +28217,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.F32Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.F32Deserializer.html
+
 
 burn::serde::de::value# Struct F32Deserializer
 `pub struct F32Deserializer /* private fields */ }
@@ -28033,7 +28378,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.F64Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.F64Deserializer.html
+
 
 burn::serde::de::value# Struct F64Deserializer
 `pub struct F64Deserializer /* private fields */ }
@@ -28193,7 +28539,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I8Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I8Deserializer.html
+
 
 burn::serde::de::value# Struct I8Deserializer
 `pub struct I8Deserializer /* private fields */ }
@@ -28353,7 +28700,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I16Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I16Deserializer.html
+
 
 burn::serde::de::value# Struct I16Deserializer
 `pub struct I16Deserializer /* private fields */ }
@@ -28513,7 +28861,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I32Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I32Deserializer.html
+
 
 burn::serde::de::value# Struct I32Deserializer
 `pub struct I32Deserializer /* private fields */ }
@@ -28673,7 +29022,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I64Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I64Deserializer.html
+
 
 burn::serde::de::value# Struct I64Deserializer
 `pub struct I64Deserializer /* private fields */ }
@@ -28833,7 +29183,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I128Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.I128Deserializer.html
+
 
 burn::serde::de::value# Struct I128Deserializer
 `pub struct I128Deserializer /* private fields */ }
@@ -28993,7 +29344,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.IsizeDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.IsizeDeserializer.html
+
 
 burn::serde::de::value# Struct IsizeDeserializer
 `pub struct IsizeDeserializer /* private fields */ }
@@ -29153,7 +29505,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.MapAccessDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.MapAccessDeserializer.html
+
 
 burn::serde::de::value# Struct MapAccessDeserializer
 `pub struct MapAccessDeserializer /* private fields */ }
@@ -29328,7 +29681,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.MapDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.MapDeserializer.html
+
 
 burn::serde::de::value# Struct MapDeserializer
 `pub struct MapDeserializer where
@@ -29545,7 +29899,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.SeqAccessDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.SeqAccessDeserializer.html
+
 
 burn::serde::de::value# Struct SeqAccessDeserializer
 `pub struct SeqAccessDeserializer /* private fields */ }
@@ -29711,7 +30066,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.SeqDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.SeqDeserializer.html
+
 
 burn::serde::de::value# Struct SeqDeserializer
 `pub struct SeqDeserializer /* private fields */ }
@@ -29902,7 +30258,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.StrDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.StrDeserializer.html
+
 
 burn::serde::de::value# Struct StrDeserializer
 `pub struct StrDeserializer /* private fields */ }
@@ -30070,7 +30427,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.StringDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.StringDeserializer.html
+
 
 burn::serde::de::value# Struct StringDeserializer
 `pub struct StringDeserializer /* private fields */ }
@@ -30238,7 +30596,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U8Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U8Deserializer.html
+
 
 burn::serde::de::value# Struct U8Deserializer
 `pub struct U8Deserializer /* private fields */ }
@@ -30398,7 +30757,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U16Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U16Deserializer.html
+
 
 burn::serde::de::value# Struct U16Deserializer
 `pub struct U16Deserializer /* private fields */ }
@@ -30558,7 +30918,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U32Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U32Deserializer.html
+
 
 burn::serde::de::value# Struct U32Deserializer
 `pub struct U32Deserializer /* private fields */ }
@@ -30726,7 +31087,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U64Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U64Deserializer.html
+
 
 burn::serde::de::value# Struct U64Deserializer
 `pub struct U64Deserializer /* private fields */ }
@@ -30886,7 +31248,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U128Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.U128Deserializer.html
+
 
 burn::serde::de::value# Struct U128Deserializer
 `pub struct U128Deserializer /* private fields */ }
@@ -31046,7 +31409,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.UnitDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.UnitDeserializer.html
+
 
 burn::serde::de::value# Struct UnitDeserializer
 `pub struct UnitDeserializer /* private fields */ }
@@ -31205,7 +31569,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.UsizeDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/value/struct.UsizeDeserializer.html
+
 
 burn::serde::de::value# Struct UsizeDeserializer
 `pub struct UsizeDeserializer /* private fields */ }
@@ -31365,7 +31730,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/struct.IgnoredAny.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/struct.IgnoredAny.html
+
 
 burn::serde::de# Struct IgnoredAny
 `pub struct IgnoredAny;
@@ -31561,7 +31927,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/serde/de/enum.Unexpected.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/enum.Unexpected.html
+
 
 burn::serde::de# Enum Unexpected
 `pub enum Unexpected Show 18 variants    Bool(bool),
@@ -31704,7 +32071,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.Deserialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.Deserialize.html
+
 
 burn::serde::de# Trait Deserialize
 `pub trait Deserialize where D: Deserializer ;
@@ -32260,7 +32628,8 @@ Source`impl where
     O: SimpleOptimizer `
 Source`impl where
     T: Deserialize `
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.DeserializeOwned.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.DeserializeOwned.html
+
 
 burn::serde::de# Trait DeserializeOwned
 `pub trait DeserializeOwned: for Expand descriptionA data structure that can be deserialized without borrowing any data from
@@ -32289,7 +32658,8 @@ lifetimes.
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
 Source`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.DeserializeSeed.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.DeserializeSeed.html
+
 
 burn::serde::de# Trait DeserializeSeed
 `pub trait DeserializeSeed where D: Deserializer ;
@@ -32419,7 +32789,8 @@ Source`impl where
     T: Deserialize `
 Sourcetype Value = TSourcefn deserialize where
     D: Deserializer ## Implementors
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.Deserializer.html
+
 
 burn::serde::de# Trait Deserializer
 `pub trait Deserializer Show 32 methods    // Required methods
@@ -33205,7 +33576,8 @@ Sourcetype Error = ESource`impl where
 Sourcetype Error = ESource`impl where
     I: Iterator `
 Sourcetype Error = E
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.EnumAccess.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.EnumAccess.html
+
 
 burn::serde::de# Trait EnumAccess
 `pub trait EnumAccess where V: DeserializeSeed ;
@@ -33268,7 +33640,8 @@ Sourcetype Error = ESourcetype Variant = UnitOnly Source`impl where
 Sourcetype Error = ESourcetype Variant = UnitOnly Source`impl where
     E: Error,`
 Sourcetype Error = ESourcetype Variant = UnitOnly
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.Error.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.Error.html
+
 
 burn::serde::de# Trait Error
 `pub trait Error: Sized + Error {
@@ -33381,7 +33754,8 @@ Sourcefn custom where
 Sourcefn custom where
     T: Display,Sourcefn invalid_type(unexp: Unexpected Sourcefn invalid_value(unexp: Unexpected ## Implementors
 Source`impl Error for burn::serde::de::value::Error`
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.Expected.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.Expected.html
+
 
 burn::serde::de# Trait Expected
 `pub trait Expected {
@@ -33432,7 +33806,8 @@ Source`impl Expected for &amp;str`
 Sourcefn fmt(&amp;self, formatter: &amp;mut Formatter ## Implementors
 Source`impl where
     T: Visitor `
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.IntoDeserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.IntoDeserializer.html
+
 
 burn::serde::de# Trait IntoDeserializer
 `pub trait IntoDeserializer where
@@ -33599,7 +33974,8 @@ Sourcetype Deserializer = UsizeDeserializer Source`impl where
 Sourcetype Deserializer = MapDeserializer Source`impl where
     I: Iterator `
 Sourcetype Deserializer = SeqDeserializer
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.MapAccess.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.MapAccess.html
+
 
 burn::serde::de# Trait MapAccess
 `pub trait MapAccess where K: DeserializeSeed ;
@@ -33711,7 +34087,8 @@ Source`impl where
     I: Iterator,
      `
 Sourcetype Error = E
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.SeqAccess.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.SeqAccess.html
+
 
 burn::serde::de# Trait SeqAccess
 `pub trait SeqAccess where T: DeserializeSeed ;
@@ -33772,7 +34149,8 @@ Source`impl where
 Sourcetype Error = ESource`impl where
     I: Iterator `
 Sourcetype Error = E
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.StdError.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.StdError.html
+
 
 burn::serde::de# Trait StdError
 `pub trait StdError: Debug + Display {
@@ -34217,7 +34595,8 @@ Source`impl 1.0.0 · Source`impl 1.0.0 · Source`impl Source`impl where
     T: Error + ?Sized,`
 1.0.0 · Source`impl 1.0.0 · Source`impl 1.0.0 · Source`impl where
     W: Send + Debug,`
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.VariantAccess.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.VariantAccess.html
+
 
 burn::serde::de# Trait VariantAccess
 `pub trait VariantAccess     fn newtype_variant_seed where T: DeserializeSeed ;
@@ -34322,7 +34701,8 @@ This method exists as a convenience for `Deserialize
 behavior.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/serde/de/trait.Visitor.html
+# Page : https://docs.rs/burn/latest/burn/serde/de/trait.Visitor.html
+
 
 burn::serde::de# Trait Visitor
 `pub trait Visitor Show 28 methods    // Required method
@@ -34592,7 +34972,8 @@ The default implementation fails with a type error.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
 Source`impl Sourcetype Value = IgnoredAny
-## Page : https://docs.rs/burn/latest/burn/serde/ser/index.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/index.html
+
 
 burn::serde# Module ser
 Expand descriptionGeneric data structure serialization framework.
@@ -34749,7 +35130,8 @@ by Serde.
 ` is a trait representing the basic expectations for error values,
 i.e., values of type `E
 ` in `Result
-## Page : https://docs.rs/burn/latest/burn/serde/ser/struct.Impossible.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/struct.Impossible.html
+
 
 burn::serde::ser# Struct Impossible
 `pub struct Impossible /* private fields */ }
@@ -34882,7 +35264,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Error.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Error.html
+
 
 burn::serde::ser# Trait Error
 `pub trait Error: Sized + Error {
@@ -34934,7 +35317,8 @@ Sourcefn custom where
 Sourcefn custom where
     T: Display,## Implementors
 Source`impl Error for burn::serde::de::value::Error`
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Serialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Serialize.html
+
 
 burn::serde::ser# Trait Serialize
 `pub trait Serialize {
@@ -35806,7 +36190,8 @@ Source`impl where
     O: SimpleOptimizer `
 Source`impl where
     T: Serialize,`
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeMap.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeMap.html
+
 
 burn::serde::ser# Trait SerializeMap
 `pub trait SerializeMap {
@@ -35900,7 +36285,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeSeq.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeSeq.html
+
 
 burn::serde::ser# Trait SerializeSeq
 `pub trait SerializeSeq {
@@ -35950,7 +36336,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeStruct.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeStruct.html
+
 
 burn::serde::ser# Trait SerializeStruct
 `pub trait SerializeStruct {
@@ -36007,7 +36394,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeStructVariant.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeStructVariant.html
+
 
 burn::serde::ser# Trait SerializeStructVariant
 `pub trait SerializeStructVariant {
@@ -36070,7 +36458,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTuple.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTuple.html
+
 
 burn::serde::ser# Trait SerializeTuple
 `pub trait SerializeTuple {
@@ -36146,7 +36535,8 @@ Sourcetype Ok = ()Sourcetype Error = ErrorSourcefn serialize_element where
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTupleStruct.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTupleStruct.html
+
 
 burn::serde::ser# Trait SerializeTupleStruct
 `pub trait SerializeTupleStruct {
@@ -36196,7 +36586,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTupleVariant.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.SerializeTupleVariant.html
+
 
 burn::serde::ser# Trait SerializeTupleVariant
 `pub trait SerializeTupleVariant {
@@ -36259,7 +36650,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl where
     Error: Error,`
 Sourcetype Ok = OkSourcetype Error = Error
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Serializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.Serializer.html
+
 
 burn::serde::ser# Trait Serializer
 `pub trait Serializer: Sized {
@@ -37583,7 +37975,8 @@ Sourcetype Ok = ()Sourcetype Error = ErrorSourcetype SerializeSeq = Compound Sou
     len: usize,
 ) -&gt; Result Sourcefn collect_str where
     T: Display + ?Sized,## Implementors
-## Page : https://docs.rs/burn/latest/burn/serde/ser/trait.StdError.html
+# Page : https://docs.rs/burn/latest/burn/serde/ser/trait.StdError.html
+
 
 burn::serde::ser# Trait StdError
 `pub trait StdError: Debug + Display {
@@ -38028,7 +38421,8 @@ Source`impl 1.0.0 · Source`impl 1.0.0 · Source`impl Source`impl where
     T: Error + ?Sized,`
 1.0.0 · Source`impl 1.0.0 · Source`impl 1.0.0 · Source`impl where
     W: Send + Debug,`
-## Page : https://docs.rs/burn/latest/burn/serde/macro.forward_to_deserialize_any.html
+# Page : https://docs.rs/burn/latest/burn/serde/macro.forward_to_deserialize_any.html
+
 
 burn::serde# Macro forward_to_deserialize_any
 `macro_rules! forward_to_deserialize_any {
@@ -38087,7 +38481,8 @@ specified explicitly if necessary.
     tuple_struct map struct enum identifier ignored_any
 }
 `
-## Page : https://docs.rs/burn/latest/burn/serde/trait.Deserialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/trait.Deserialize.html
+
 
 burn::serde# Trait Deserialize
 `pub trait Deserialize where D: Deserializer ;
@@ -38643,7 +39038,8 @@ Source`impl where
     O: SimpleOptimizer `
 Source`impl where
     T: Deserialize `
-## Page : https://docs.rs/burn/latest/burn/serde/trait.Deserializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/trait.Deserializer.html
+
 
 burn::serde# Trait Deserializer
 `pub trait Deserializer Show 32 methods    // Required methods
@@ -39429,7 +39825,8 @@ Sourcetype Error = ESource`impl where
 Sourcetype Error = ESource`impl where
     I: Iterator `
 Sourcetype Error = E
-## Page : https://docs.rs/burn/latest/burn/serde/trait.Serialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/trait.Serialize.html
+
 
 burn::serde# Trait Serialize
 `pub trait Serialize {
@@ -40301,7 +40698,8 @@ Source`impl where
     O: SimpleOptimizer `
 Source`impl where
     T: Serialize,`
-## Page : https://docs.rs/burn/latest/burn/serde/trait.Serializer.html
+# Page : https://docs.rs/burn/latest/burn/serde/trait.Serializer.html
+
 
 burn::serde# Trait Serializer
 `pub trait Serializer: Sized {
@@ -41625,7 +42023,8 @@ Sourcetype Ok = ()Sourcetype Error = ErrorSourcetype SerializeSeq = Compound Sou
     len: usize,
 ) -&gt; Result Sourcefn collect_str where
     T: Display + ?Sized,## Implementors
-## Page : https://docs.rs/burn/latest/burn/serde/derive.Deserialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/derive.Deserialize.html
+
 
 burn::serde# Derive Macro Deserialize
 `#[derive(Deserialize)]
@@ -41635,7 +42034,8 @@ burn::serde# Derive Macro Deserialize
 }
 
 `
-## Page : https://docs.rs/burn/latest/burn/serde/derive.Serialize.html
+# Page : https://docs.rs/burn/latest/burn/serde/derive.Serialize.html
+
 
 burn::serde# Derive Macro Serialize
 `#[derive(Serialize)]
@@ -41645,7 +42045,8 @@ burn::serde# Derive Macro Serialize
 }
 
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/index.html
+
 
 burn# Module tensor
 Expand descriptionModule for the tensor.
@@ -41736,7 +42137,8 @@ dimension `dim
 - try_read_syncRead a future synchronously.
 ## Type Aliases
 - DeviceDevice type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/index.html
+
 
 burn::tensor# Module activation
 Expand descriptionThe activation module.
@@ -41763,32 +42165,37 @@ Rectified Linear Units (ReLU).
 - softminApplies the softmin function on the input tensor along the given dimension.
 - softplusApplies the softplus function
 - tanhApplies the tanh function
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.gelu.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.gelu.html
+
 
 burn::tensor::activation# Function gelu
 `pub fn gelu where
     B: Backend,
 `Expand descriptionApplies the Gaussian Error Linear Units function as described in the paper Gaussian Error Linear Units (GELUs).
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.hard_sigmoid.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.hard_sigmoid.html
+
 
 burn::tensor::activation# Function hard_sigmoid
 `pub fn hard_sigmoid where
     B: Backend,
 `Expand descriptionApplies the hard sigmoid function
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.leaky_relu.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.leaky_relu.html
+
 
 burn::tensor::activation# Function leaky_relu
 `pub fn leaky_relu where
     B: Backend,
 `Expand descriptionApplies the leaky rectified linear unit function.
 f(x) = negative_slope * x for x
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.log_sigmoid.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.log_sigmoid.html
+
 
 burn::tensor::activation# Function log_sigmoid
 `pub fn log_sigmoid where
     B: Backend,
 `Expand descriptionApplies the log sigmoid function.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.log_softmax.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.log_softmax.html
+
 
 burn::tensor::activation# Function log_softmax
 `pub fn log_softmax where
@@ -41803,7 +42210,8 @@ The dimension argument `dim
 It must in the range of `0
 ` and `D-1
 `.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.mish.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.mish.html
+
 
 burn::tensor::activation# Function mish
 `pub fn mish where
@@ -41811,7 +42219,8 @@ burn::tensor::activation# Function mish
 `Expand descriptionApplies the Mish function as described in the paper in Mish: A Self Regularized Non-Monotonic Neural Activation Function.
 `mish(x_i) = x_i \times tanh(softplus(x_i))
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.prelu.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.prelu.html
+
 
 burn::tensor::activation# Function prelu
 `pub fn prelu where
@@ -41821,7 +42230,8 @@ burn::tensor::activation# Function prelu
 `
 tensor is assumed to be of shape [batch_size, channels, …]
 alpha is assumed to be of shape [channels] or [1]
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.quiet_softmax.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.quiet_softmax.html
+
 
 burn::tensor::activation# Function quiet_softmax
 `pub fn quiet_softmax where
@@ -41838,7 +42248,8 @@ The dimension argument `dim
 It must in the range of `0
 ` and `D-1
 `.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.relu.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.relu.html
+
 
 burn::tensor::activation# Function relu
 `pub fn relu where
@@ -41847,19 +42258,22 @@ burn::tensor::activation# Function relu
 Rectified Linear Units (ReLU).
 `y = max(0, x)
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.sigmoid.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.sigmoid.html
+
 
 burn::tensor::activation# Function sigmoid
 `pub fn sigmoid where
     B: Backend,
 `Expand descriptionApplies the sigmoid function.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.silu.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.silu.html
+
 
 burn::tensor::activation# Function silu
 `pub fn silu where
     B: Backend,
 `Expand descriptionApplies the silu function
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softmax.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softmax.html
+
 
 burn::tensor::activation# Function softmax
 `pub fn softmax where
@@ -41874,7 +42288,8 @@ The dimension argument `dim
 It must in the range of `0
 ` and `D-1
 `.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softmin.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softmin.html
+
 
 burn::tensor::activation# Function softmin
 `pub fn softmin where
@@ -41889,7 +42304,8 @@ The dimension argument `dim
 It must in the range of `0
 ` and `D-1
 `.
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softplus.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.softplus.html
+
 
 burn::tensor::activation# Function softplus
 `pub fn softplus where
@@ -41897,13 +42313,15 @@ burn::tensor::activation# Function softplus
 `Expand descriptionApplies the softplus function
 `softplus(x_i) = log(1 + exp(\beta x_i)) / \beta
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.tanh.html
+# Page : https://docs.rs/burn/latest/burn/tensor/activation/fn.tanh.html
+
 
 burn::tensor::activation# Function tanh
 `pub fn tanh where
     B: Backend,
 `Expand descriptionApplies the tanh function
-## Page : https://docs.rs/burn/latest/burn/tensor/backend/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/backend/index.html
+
 
 burn::tensor# Module backend
 Expand descriptionThe backend module.
@@ -41913,7 +42331,8 @@ Expand descriptionThe backend module.
 - AutodiffBackendTrait that allows a backend to support autodiff.
 - BackendThis trait defines all types and functions needed for a backend to be used with burn.
 - DeviceOpsThe handle device trait allows to get an id for a backend device.
-## Page : https://docs.rs/burn/latest/burn/tensor/backend/struct.DeviceId.html
+# Page : https://docs.rs/burn/latest/burn/tensor/backend/struct.DeviceId.html
+
 
 burn::tensor::backend# Struct DeviceId
 `pub struct DeviceId {
@@ -42000,7 +42419,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.AutodiffBackend.html
+# Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.AutodiffBackend.html
+
 
 burn::tensor::backend# Trait AutodiffBackend
 `pub trait AutodiffBackend: Backend {
@@ -42157,7 +42577,8 @@ Returns
 The autodiff backend tensor.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.Backend.html
+# Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.Backend.html
+
 
 burn::tensor::backend# Trait Backend
 `pub trait Backend:
@@ -42228,7 +42649,8 @@ Sourcefn ad_enabled() -&gt; boolIf autodiff is enabled.
 Sourcefn sync(_device: &amp;Self::Device)Sync the backend, ensure that all computation are finished.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.DeviceOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/backend/trait.DeviceOps.html
+
 
 burn::tensor::backend# Trait DeviceOps
 `pub trait DeviceOps:
@@ -42246,14 +42668,16 @@ burn::tensor::backend# Trait DeviceOps
 Sourcefn id(&amp;self) -&gt; DeviceIdReturn the device id.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/cast/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/cast/index.html
+
 
 burn::tensor# Module cast
 Expand descriptionTensor element casting.
 ## Traits
 - ToElementA generic trait for converting a value to a number.
 Adapted from num_traits::ToPrimitive to support bool.
-## Page : https://docs.rs/burn/latest/burn/tensor/cast/trait.ToElement.html
+# Page : https://docs.rs/burn/latest/burn/tensor/cast/trait.ToElement.html
+
 
 burn::tensor::cast# Trait ToElement
 `pub trait ToElement {
@@ -42367,13 +42791,15 @@ Sourcefn to_isize(&amp;self) -&gt; isizeSourcefn to_i8(&amp;self) -&gt; i8Source
 Sourcefn to_isize(&amp;self) -&gt; isizeSourcefn to_i8(&amp;self) -&gt; i8Sourcefn to_i16(&amp;self) -&gt; i16Sourcefn to_i32(&amp;self) -&gt; i32Sourcefn to_i64(&amp;self) -&gt; i64Sourcefn to_i128(&amp;self) -&gt; i128Sourcefn to_usize(&amp;self) -&gt; usizeSourcefn to_u8(&amp;self) -&gt; u8Sourcefn to_u16(&amp;self) -&gt; u16Sourcefn to_u32(&amp;self) -&gt; u32Sourcefn to_u64(&amp;self) -&gt; u64Sourcefn to_u128(&amp;self) -&gt; u128Sourcefn to_f32(&amp;self) -&gt; f32Sourcefn to_f64(&amp;self) -&gt; f64## Implementors
 Source`impl ToElement for bf16`
 Source`impl ToElement for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/container/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/container/index.html
+
 
 burn::tensor# Module container
 Expand descriptionThe container module.
 ## Structs
 - TensorContainerContains tensor of arbitrary dimension.
-## Page : https://docs.rs/burn/latest/burn/tensor/container/struct.TensorContainer.html
+# Page : https://docs.rs/burn/latest/burn/tensor/container/struct.TensorContainer.html
+
 
 burn::tensor::container# Struct TensorContainer
 `pub struct TensorContainer /* private fields */ }
@@ -42430,13 +42856,15 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/loss/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/loss/index.html
+
 
 burn::tensor# Module loss
 Expand descriptionThe loss module.
 ## Functions
 - cross_entropy_with_logitsComputes the log softmax cross entropy between logits and target probabilities.
-## Page : https://docs.rs/burn/latest/burn/tensor/loss/fn.cross_entropy_with_logits.html
+# Page : https://docs.rs/burn/latest/burn/tensor/loss/fn.cross_entropy_with_logits.html
+
 
 burn::tensor::loss# Function cross_entropy_with_logits
 `pub fn cross_entropy_with_logits where
@@ -42453,7 +42881,8 @@ burn::tensor::loss# Function cross_entropy_with_logits
 ## Returns
 
 The log softmax cross entropy.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/index.html
+
 
 burn::tensor# Module module
 Expand descriptionThe burn module.
@@ -42476,115 +42905,134 @@ Expand descriptionThe burn module.
 - max_pool2dApplies a 2D max pooling.
 - max_pool2d_with_indicesApplies a 2D max pooling with indices.
 - unfold4dApplies a 4D to 3D unfold.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.adaptive_avg_pool1d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.adaptive_avg_pool1d.html
+
 
 burn::tensor::module# Function adaptive_avg_pool1d
 `pub fn adaptive_avg_pool1d where
     B: Backend,
 `Expand descriptionApplies a 1D adaptive avg pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.adaptive_avg_pool2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.adaptive_avg_pool2d.html
+
 
 burn::tensor::module# Function adaptive_avg_pool2d
 `pub fn adaptive_avg_pool2d where
     B: Backend,
 `Expand descriptionApplies a 2D adaptive avg pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.avg_pool1d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.avg_pool1d.html
+
 
 burn::tensor::module# Function avg_pool1d
 `pub fn avg_pool1d where
     B: Backend,
 `Expand descriptionApplies a 1D avg pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.avg_pool2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.avg_pool2d.html
+
 
 burn::tensor::module# Function avg_pool2d
 `pub fn avg_pool2d where
     B: Backend,
 `Expand descriptionApplies a 2D avg pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv1d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv1d.html
+
 
 burn::tensor::module# Function conv1d
 `pub fn conv1d where
     B: Backend,
 `Expand descriptionApplies a 1D convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv2d.html
+
 
 burn::tensor::module# Function conv2d
 `pub fn conv2d where
     B: Backend,
 `Expand descriptionApplies a 2D convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv3d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv3d.html
+
 
 burn::tensor::module# Function conv3d
 `pub fn conv3d where
     B: Backend,
 `Expand descriptionApplies a 3D convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose1d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose1d.html
+
 
 burn::tensor::module# Function conv_transpose1d
 `pub fn conv_transpose1d where
     B: Backend,
 `Expand descriptionApplies a 1D transposed convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose2d.html
+
 
 burn::tensor::module# Function conv_transpose2d
 `pub fn conv_transpose2d where
     B: Backend,
 `Expand descriptionApplies a 2D transposed convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose3d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.conv_transpose3d.html
+
 
 burn::tensor::module# Function conv_transpose3d
 `pub fn conv_transpose3d where
     B: Backend,
 `Expand descriptionApplies a 3D transposed convolution](crate::ops::ModuleOps::conv_transpose3d).
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.deform_conv2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.deform_conv2d.html
+
 
 burn::tensor::module# Function deform_conv2d
 `pub fn deform_conv2d where
     B: Backend,
 `Expand descriptionApplies a Deformable 2D convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.embedding.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.embedding.html
+
 
 burn::tensor::module# Function embedding
 `pub fn embedding where
     B: Backend,
 `Expand descriptionApplies the embedding module.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.interpolate.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.interpolate.html
+
 
 burn::tensor::module# Function interpolate
 `pub fn interpolate where
     B: Backend,
 `Expand descriptionApplies a 2D interpolation.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool1d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool1d.html
+
 
 burn::tensor::module# Function max_pool1d
 `pub fn max_pool1d where
     B: Backend,
 `Expand descriptionApplies a 1D max pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool1d_with_indices.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool1d_with_indices.html
+
 
 burn::tensor::module# Function max_pool1d_with_indices
 `pub fn max_pool1d_with_indices where
     B: Backend,
 `Expand descriptionApplies a 1D max pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool2d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool2d.html
+
 
 burn::tensor::module# Function max_pool2d
 `pub fn max_pool2d where
     B: Backend,
 `Expand descriptionApplies a 2D max pooling.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool2d_with_indices.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.max_pool2d_with_indices.html
+
 
 burn::tensor::module# Function max_pool2d_with_indices
 `pub fn max_pool2d_with_indices where
     B: Backend,
 `Expand descriptionApplies a 2D max pooling with indices.
-## Page : https://docs.rs/burn/latest/burn/tensor/module/fn.unfold4d.html
+# Page : https://docs.rs/burn/latest/burn/tensor/module/fn.unfold4d.html
+
 
 burn::tensor::module# Function unfold4d
 `pub fn unfold4d where
     B: Backend,
 `Expand descriptionApplies a 4D to 3D unfold.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/index.html
+
 
 burn::tensor# Module ops
 Expand descriptionOperations on tensors module.
@@ -42631,7 +43079,8 @@ compute utilization with efficient laziness.
 - IntElemInteger element type used by backend.
 - IntTensorInteger tensor primitive type used by the backend.
 - QuantizedTensorQuantized tensor primitive type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/index.html
+
 
 burn::tensor::ops# Module conv
 Expand descriptionModule with convolution operations.
@@ -42640,7 +43089,8 @@ Expand descriptionModule with convolution operations.
 - calculate_conv_paddingCalculate the expected padding size required when applying a convolution.
 - calculate_conv_transpose_output_sizeCalculate the expected output size when doing a transposed convolution operation.
 - calculate_pool_output_sizeCalculate the expected output size when doing a pooling operation.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_output_size.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_output_size.html
+
 
 burn::tensor::ops::conv# Function calculate_conv_output_size
 `pub fn calculate_conv_output_size(
@@ -42651,7 +43101,8 @@ burn::tensor::ops::conv# Function calculate_conv_output_size
     size_in: usize,
 ) -&gt; usize
 `Expand descriptionCalculate the expected output size when doing a convolution operation.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_padding.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_padding.html
+
 
 burn::tensor::ops::conv# Function calculate_conv_padding
 `pub fn calculate_conv_padding(
@@ -42661,7 +43112,8 @@ burn::tensor::ops::conv# Function calculate_conv_padding
     size_out: usize,
 ) -&gt; usize
 `Expand descriptionCalculate the expected padding size required when applying a convolution.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_transpose_output_size.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_conv_transpose_output_size.html
+
 
 burn::tensor::ops::conv# Function calculate_conv_transpose_output_size
 `pub fn calculate_conv_transpose_output_size(
@@ -42673,7 +43125,8 @@ burn::tensor::ops::conv# Function calculate_conv_transpose_output_size
     size_in: usize,
 ) -&gt; usize
 `Expand descriptionCalculate the expected output size when doing a transposed convolution operation.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_pool_output_size.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/conv/fn.calculate_pool_output_size.html
+
 
 burn::tensor::ops::conv# Function calculate_pool_output_size
 `pub fn calculate_pool_output_size(
@@ -42684,11 +43137,13 @@ burn::tensor::ops::conv# Function calculate_pool_output_size
     size_in: usize,
 ) -&gt; usize
 `Expand descriptionCalculate the expected output size when doing a pooling operation.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/pool/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/pool/index.html
+
 
 burn::tensor::ops# Module pool
 Expand descriptionModule with pooling operations.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.Conv2dBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.Conv2dBackward.html
+
 
 burn::tensor::ops# Struct Conv2dBackward
 `pub struct Conv2dBackward where
@@ -42741,7 +43196,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.Conv3dBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.Conv3dBackward.html
+
 
 burn::tensor::ops# Struct Conv3dBackward
 `pub struct Conv3dBackward where
@@ -42794,7 +43250,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.ConvOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.ConvOptions.html
+
 
 burn::tensor::ops# Struct ConvOptions
 `pub struct ConvOptions Expand descriptionConvolution options.
@@ -42868,7 +43325,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.ConvTransposeOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.ConvTransposeOptions.html
+
 
 burn::tensor::ops# Struct ConvTransposeOptions
 `pub struct ConvTransposeOptions Expand descriptionTransposed convolution options.
@@ -42945,7 +43403,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.DeformConv2dBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.DeformConv2dBackward.html
+
 
 burn::tensor::ops# Struct DeformConv2dBackward
 `pub struct DeformConv2dBackward where
@@ -43000,7 +43459,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.DeformConvOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.DeformConvOptions.html
+
 
 burn::tensor::ops# Struct DeformConvOptions
 `pub struct DeformConvOptions Expand descriptionConvolution options.
@@ -43077,7 +43537,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.InterpolateBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.InterpolateBackward.html
+
 
 burn::tensor::ops# Struct InterpolateBackward
 `pub struct InterpolateBackward where
@@ -43128,7 +43589,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.InterpolateOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.InterpolateOptions.html
+
 
 burn::tensor::ops# Struct InterpolateOptions
 `pub struct InterpolateOptions {
@@ -43188,7 +43650,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool1dBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool1dBackward.html
+
 
 burn::tensor::ops# Struct MaxPool1dBackward
 `pub struct MaxPool1dBackward where
@@ -43238,7 +43701,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool1dWithIndices.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool1dWithIndices.html
+
 
 burn::tensor::ops# Struct MaxPool1dWithIndices
 `pub struct MaxPool1dWithIndices where
@@ -43290,7 +43754,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool2dBackward.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool2dBackward.html
+
 
 burn::tensor::ops# Struct MaxPool2dBackward
 `pub struct MaxPool2dBackward where
@@ -43340,7 +43805,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool2dWithIndices.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.MaxPool2dWithIndices.html
+
 
 burn::tensor::ops# Struct MaxPool2dWithIndices
 `pub struct MaxPool2dWithIndices where
@@ -43392,7 +43858,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.TransactionPrimitive.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.TransactionPrimitive.html
+
 
 burn::tensor::ops# Struct TransactionPrimitive
 `pub struct TransactionPrimitive where
@@ -43441,7 +43908,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.TransactionPrimitiveResult.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.TransactionPrimitiveResult.html
+
 
 burn::tensor::ops# Struct TransactionPrimitiveResult
 `pub struct TransactionPrimitiveResult {
@@ -43488,7 +43956,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.UnfoldOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/struct.UnfoldOptions.html
+
 
 burn::tensor::ops# Struct UnfoldOptions
 `pub struct UnfoldOptions {
@@ -43560,7 +44029,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/enum.InterpolateMode.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/enum.InterpolateMode.html
+
 
 burn::tensor::ops# Enum InterpolateMode
 `pub enum InterpolateMode {
@@ -43639,7 +44109,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.ActivationOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.ActivationOps.html
+
 
 burn::tensor::ops# Trait ActivationOps
 `pub trait ActivationOps where
@@ -43779,7 +44250,8 @@ Returns
 The output gradient.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.BoolTensorOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.BoolTensorOps.html
+
 
 burn::tensor::ops# Trait BoolTensorOps
 `pub trait BoolTensorOps where
@@ -44175,7 +44647,8 @@ A vector of tensors, one for each dimension of the given tensor, containing the 
 the non-zero elements in that dimension. If all elements are zero, the vector is empty.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.FloatTensorOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.FloatTensorOps.html
+
 
 burn::tensor::ops# Trait FloatTensorOps
 `pub trait FloatTensorOps where
@@ -45500,7 +45973,8 @@ Returns
 A tensor with the same shape as the input tensor the indices map back to the original input tensor.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.IntTensorOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.IntTensorOps.html
+
 
 burn::tensor::ops# Trait IntTensorOps
 `pub trait IntTensorOps where
@@ -46670,7 +47144,8 @@ Returns
 A tensor with the same shape as the input tensor the indices map back to the original input tensor.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.ModuleOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.ModuleOps.html
+
 
 burn::tensor::ops# Trait ModuleOps
 `pub trait ModuleOps where
@@ -46930,7 +47405,8 @@ Sourcefn max_pool1d_with_indices_backward(
     x:  Backward pass for the max pooling 1d operation.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.QTensorOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.QTensorOps.html
+
 
 burn::tensor::ops# Trait QTensorOps
 `pub trait QTensorOps where
@@ -47954,7 +48430,8 @@ Returns
 A tensor with the same shape as the input tensor the indices map back to the original input tensor.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.TransactionOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/trait.TransactionOps.html
+
 
 burn::tensor::ops# Trait TransactionOps
 `pub trait TransactionOps where
@@ -47969,39 +48446,48 @@ Sourcefn tr_execute(
 result.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/fn.binary_ops_shape.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/fn.binary_ops_shape.html
+
 
 burn::tensor::ops# Function binary_ops_shape
 `pub fn binary_ops_shape(lhs: &amp;[usize], rhs: &amp;[usize]) -&gt; Vec Expand descriptionComputes the output shape for binary operations with broadcasting support.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.BoolTensor.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.BoolTensor.html
+
 
 burn::tensor::ops# Type Alias BoolTensor
 `pub type BoolTensor Expand descriptionBoolean tensor primitive type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.Device.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.Device.html
+
 
 burn::tensor::ops# Type Alias Device
 `pub type Device Expand descriptionDevice type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.FloatElem.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.FloatElem.html
+
 
 burn::tensor::ops# Type Alias FloatElem
 `pub type FloatElem Expand descriptionFloat element type used by backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.FloatTensor.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.FloatTensor.html
+
 
 burn::tensor::ops# Type Alias FloatTensor
 `pub type FloatTensor Expand descriptionFloat tensor primitive type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.IntElem.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.IntElem.html
+
 
 burn::tensor::ops# Type Alias IntElem
 `pub type IntElem Expand descriptionInteger element type used by backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.IntTensor.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.IntTensor.html
+
 
 burn::tensor::ops# Type Alias IntTensor
 `pub type IntTensor Expand descriptionInteger tensor primitive type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/ops/type.QuantizedTensor.html
+# Page : https://docs.rs/burn/latest/burn/tensor/ops/type.QuantizedTensor.html
+
 
 burn::tensor::ops# Type Alias QuantizedTensor
 `pub type QuantizedTensor Expand descriptionQuantized tensor primitive type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/index.html
+
 
 burn::tensor# Module quantization
 Expand descriptionTensor quantization module.
@@ -48029,7 +48515,8 @@ data type `Q
 - unpack_u32s_to_i8sUnpack 32-bit unsigned integer values into a sequence of signed 8-bit integers.
 ## Type Aliases
 - QuantizationParametersThe tensor quantization parameters.
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.AffineQuantization.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.AffineQuantization.html
+
 
 burn::tensor::quantization# Struct AffineQuantization
 `pub struct AffineQuantization where
@@ -48165,7 +48652,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.CalibrationRange.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.CalibrationRange.html
+
 
 burn::tensor::quantization# Struct CalibrationRange
 `pub struct CalibrationRange where
@@ -48224,7 +48712,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.MinMaxCalibration.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.MinMaxCalibration.html
+
 
 burn::tensor::quantization# Struct MinMaxCalibration
 `pub struct MinMaxCalibration {}
@@ -48267,7 +48756,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QParams.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QParams.html
+
 
 burn::tensor::quantization# Struct QParams
 `pub struct QParams Expand descriptionThe quantization tensor data parameters.
@@ -48340,7 +48830,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QuantizationParametersPrimitive.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QuantizationParametersPrimitive.html
+
 
 burn::tensor::quantization# Struct QuantizationParametersPrimitive
 `pub struct QuantizationParametersPrimitive where
@@ -48396,7 +48887,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QuantizedBytes.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.QuantizedBytes.html
+
 
 burn::tensor::quantization# Struct QuantizedBytes
 `pub struct QuantizedBytes {
@@ -48464,7 +48956,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.SymmetricQuantization.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/struct.SymmetricQuantization.html
+
 
 burn::tensor::quantization# Struct SymmetricQuantization
 `pub struct SymmetricQuantization where
@@ -48576,7 +49069,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationScheme.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationScheme.html
+
 
 burn::tensor::quantization# Enum QuantizationScheme
 `pub enum QuantizationScheme {
@@ -48663,7 +49157,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationStrategy.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationStrategy.html
+
 
 burn::tensor::quantization# Enum QuantizationStrategy
 `pub enum QuantizationStrategy {
@@ -48746,7 +49241,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationType.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/enum.QuantizationType.html
+
 
 burn::tensor::quantization# Enum QuantizationType
 `pub enum QuantizationType {
@@ -48826,7 +49322,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.Calibration.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.Calibration.html
+
 
 burn::tensor::quantization# Trait Calibration
 `pub trait Calibration {
@@ -48840,7 +49337,8 @@ Sourcefn compute_range where
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
 Source`impl Calibration for MinMaxCalibration`
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.QTensorPrimitive.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.QTensorPrimitive.html
+
 
 burn::tensor::quantization# Trait QTensorPrimitive
 `pub trait QTensorPrimitive {
@@ -48851,7 +49349,8 @@ burn::tensor::quantization# Trait QTensorPrimitive
 ## Required Methods
 Sourcefn scheme(&amp;self) -&gt; &amp;QuantizationSchemeReturns the quantization scheme for the given tensor.
 ## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.Quantization.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/trait.Quantization.html
+
 
 burn::tensor::quantization# Trait Quantization
 `pub trait Quantization where
@@ -48877,15 +49376,18 @@ Source`impl where
     E: Float + Send + Sync,
     Q: PrimInt + Send + Sync,
     A: PrimInt + Send + Sync,`
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/fn.pack_i8s_to_u32s.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/fn.pack_i8s_to_u32s.html
+
 
 burn::tensor::quantization# Function pack_i8s_to_u32s
 `pub fn pack_i8s_to_u32s(values: Vec Expand descriptionPack signed 8-bit integer values into a sequence of unsigned 32-bit integers.
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/fn.unpack_u32s_to_i8s.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/fn.unpack_u32s_to_i8s.html
+
 
 burn::tensor::quantization# Function unpack_u32s_to_i8s
 `pub fn unpack_u32s_to_i8s(values: Vec Expand descriptionUnpack 32-bit unsigned integer values into a sequence of signed 8-bit integers.
-## Page : https://docs.rs/burn/latest/burn/tensor/quantization/type.QuantizationParameters.html
+# Page : https://docs.rs/burn/latest/burn/tensor/quantization/type.QuantizationParameters.html
+
 
 burn::tensor::quantization# Type Alias QuantizationParameters
 `pub type QuantizationParameters Expand descriptionThe tensor quantization parameters.
@@ -48893,7 +49395,8 @@ burn::tensor::quantization# Type Alias QuantizationParameters
 `struct QuantizationParameters ## Fields
 §`scale: Tensor The scaling factor.
 §`offset: Option The zero-point offset.
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/index.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/index.html
+
 
 burn::tensor# Module repr
 Expand descriptionBurn Tensor representaton
@@ -48978,7 +49481,8 @@ are used optimally.
 ## Traits
 - ReprBackendBackend extension trait that allows an existing backend to use the Burn tensor representation
 for compilation purpose or other…
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool1dBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool1dBackwardDescription.html
+
 
 burn::tensor::repr# Struct AdaptiveAvgPool1dBackwardDescription
 `pub struct AdaptiveAvgPool1dBackwardDescription {
@@ -49053,7 +49557,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool1dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool1dDescription.html
+
 
 burn::tensor::repr# Struct AdaptiveAvgPool1dDescription
 `pub struct AdaptiveAvgPool1dDescription {
@@ -49128,7 +49633,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool2dBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool2dBackwardDescription.html
+
 
 burn::tensor::repr# Struct AdaptiveAvgPool2dBackwardDescription
 `pub struct AdaptiveAvgPool2dBackwardDescription {
@@ -49203,7 +49709,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AdaptiveAvgPool2dDescription.html
+
 
 burn::tensor::repr# Struct AdaptiveAvgPool2dDescription
 `pub struct AdaptiveAvgPool2dDescription {
@@ -49278,7 +49785,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool1dBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool1dBackwardDescription.html
+
 
 burn::tensor::repr# Struct AvgPool1dBackwardDescription
 `pub struct AvgPool1dBackwardDescription {
@@ -49361,7 +49869,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool1dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool1dDescription.html
+
 
 burn::tensor::repr# Struct AvgPool1dDescription
 `pub struct AvgPool1dDescription {
@@ -49442,7 +49951,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool2dBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool2dBackwardDescription.html
+
 
 burn::tensor::repr# Struct AvgPool2dBackwardDescription
 `pub struct AvgPool2dBackwardDescription {
@@ -49525,7 +50035,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.AvgPool2dDescription.html
+
 
 burn::tensor::repr# Struct AvgPool2dDescription
 `pub struct AvgPool2dDescription {
@@ -49606,7 +50117,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.BinaryOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.BinaryOperationDescription.html
+
 
 burn::tensor::repr# Struct BinaryOperationDescription
 `pub struct BinaryOperationDescription {
@@ -49681,7 +50193,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.CatOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.CatOperationDescription.html
+
 
 burn::tensor::repr# Struct CatOperationDescription
 `pub struct CatOperationDescription {
@@ -49751,7 +50264,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ClampOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ClampOperationDescription.html
+
 
 burn::tensor::repr# Struct ClampOperationDescription
 `pub struct ClampOperationDescription ## Fields
@@ -49832,7 +50346,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv1dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv1dDescription.html
+
 
 burn::tensor::repr# Struct Conv1dDescription
 `pub struct Conv1dDescription {
@@ -49906,7 +50421,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv1dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv1dOptionsDescription.html
+
 
 burn::tensor::repr# Struct Conv1dOptionsDescription
 `pub struct Conv1dOptionsDescription {
@@ -49983,7 +50499,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv2dDescription.html
+
 
 burn::tensor::repr# Struct Conv2dDescription
 `pub struct Conv2dDescription {
@@ -50057,7 +50574,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv2dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv2dOptionsDescription.html
+
 
 burn::tensor::repr# Struct Conv2dOptionsDescription
 `pub struct Conv2dOptionsDescription {
@@ -50134,7 +50652,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv3dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv3dDescription.html
+
 
 burn::tensor::repr# Struct Conv3dDescription
 `pub struct Conv3dDescription {
@@ -50208,7 +50727,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv3dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.Conv3dOptionsDescription.html
+
 
 burn::tensor::repr# Struct Conv3dOptionsDescription
 `pub struct Conv3dOptionsDescription {
@@ -50285,7 +50805,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose1dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose1dDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose1dDescription
 `pub struct ConvTranspose1dDescription {
@@ -50359,7 +50880,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose1dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose1dOptionsDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose1dOptionsDescription
 `pub struct ConvTranspose1dOptionsDescription {
@@ -50438,7 +50960,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose2dDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose2dDescription
 `pub struct ConvTranspose2dDescription {
@@ -50512,7 +51035,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose2dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose2dOptionsDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose2dOptionsDescription
 `pub struct ConvTranspose2dOptionsDescription {
@@ -50591,7 +51115,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose3dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose3dDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose3dDescription
 `pub struct ConvTranspose3dDescription {
@@ -50665,7 +51190,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose3dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ConvTranspose3dOptionsDescription.html
+
 
 burn::tensor::repr# Struct ConvTranspose3dOptionsDescription
 `pub struct ConvTranspose3dOptionsDescription {
@@ -50744,7 +51270,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.CustomOpDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.CustomOpDescription.html
+
 
 burn::tensor::repr# Struct CustomOpDescription
 `pub struct CustomOpDescription {
@@ -50826,7 +51353,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformConv2dBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformConv2dBackwardDescription.html
+
 
 burn::tensor::repr# Struct DeformConv2dBackwardDescription
 `pub struct DeformConv2dBackwardDescription {
@@ -50905,7 +51433,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformConv2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformConv2dDescription.html
+
 
 burn::tensor::repr# Struct DeformConv2dDescription
 `pub struct DeformConv2dDescription {
@@ -50981,7 +51510,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformableConv2dOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DeformableConv2dOptionsDescription.html
+
 
 burn::tensor::repr# Struct DeformableConv2dOptionsDescription
 `pub struct DeformableConv2dOptionsDescription {
@@ -51060,7 +51590,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DequantizeOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.DequantizeOperationDescription.html
+
 
 burn::tensor::repr# Struct DequantizeOperationDescription
 `pub struct DequantizeOperationDescription {
@@ -51133,7 +51664,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.EmbeddingBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.EmbeddingBackwardDescription.html
+
 
 burn::tensor::repr# Struct EmbeddingBackwardDescription
 `pub struct EmbeddingBackwardDescription {
@@ -51210,7 +51742,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.EmbeddingDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.EmbeddingDescription.html
+
 
 burn::tensor::repr# Struct EmbeddingDescription
 `pub struct EmbeddingDescription {
@@ -51285,7 +51818,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ExpandDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ExpandDescription.html
+
 
 burn::tensor::repr# Struct ExpandDescription
 `pub struct ExpandDescription {
@@ -51358,7 +51892,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ExpandOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ExpandOperationDescription.html
+
 
 burn::tensor::repr# Struct ExpandOperationDescription
 `pub struct ExpandOperationDescription {
@@ -51434,7 +51969,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.FlipOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.FlipOperationDescription.html
+
 
 burn::tensor::repr# Struct FlipOperationDescription
 `pub struct FlipOperationDescription {
@@ -51510,7 +52046,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.GatherOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.GatherOperationDescription.html
+
 
 burn::tensor::repr# Struct GatherOperationDescription
 `pub struct GatherOperationDescription {
@@ -51587,7 +52124,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.HandleContainer.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.HandleContainer.html
+
 
 burn::tensor::repr# Struct HandleContainer
 `pub struct HandleContainer /* private fields */
@@ -51675,7 +52213,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateBackwardDescription.html
+
 
 burn::tensor::repr# Struct InterpolateBackwardDescription
 `pub struct InterpolateBackwardDescription {
@@ -51754,7 +52293,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateDescription.html
+
 
 burn::tensor::repr# Struct InterpolateDescription
 `pub struct InterpolateDescription {
@@ -51831,7 +52371,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateOptionsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.InterpolateOptionsDescription.html
+
 
 burn::tensor::repr# Struct InterpolateOptionsDescription
 `pub struct InterpolateOptionsDescription {
@@ -51902,7 +52443,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaskFillOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaskFillOperationDescription.html
+
 
 burn::tensor::repr# Struct MaskFillOperationDescription
 `pub struct MaskFillOperationDescription ## Fields
@@ -51983,7 +52525,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaskWhereOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaskWhereOperationDescription.html
+
 
 burn::tensor::repr# Struct MaskWhereOperationDescription
 `pub struct MaskWhereOperationDescription {
@@ -52060,7 +52603,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dDescription.html
+
 
 burn::tensor::repr# Struct MaxPool1dDescription
 `pub struct MaxPool1dDescription {
@@ -52141,7 +52685,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dWithIndicesBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dWithIndicesBackwardDescription.html
+
 
 burn::tensor::repr# Struct MaxPool1dWithIndicesBackwardDescription
 `pub struct MaxPool1dWithIndicesBackwardDescription {
@@ -52226,7 +52771,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dWithIndicesDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool1dWithIndicesDescription.html
+
 
 burn::tensor::repr# Struct MaxPool1dWithIndicesDescription
 `pub struct MaxPool1dWithIndicesDescription {
@@ -52309,7 +52855,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dDescription.html
+
 
 burn::tensor::repr# Struct MaxPool2dDescription
 `pub struct MaxPool2dDescription {
@@ -52390,7 +52937,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dWithIndicesBackwardDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dWithIndicesBackwardDescription.html
+
 
 burn::tensor::repr# Struct MaxPool2dWithIndicesBackwardDescription
 `pub struct MaxPool2dWithIndicesBackwardDescription {
@@ -52475,7 +53023,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dWithIndicesDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.MaxPool2dWithIndicesDescription.html
+
 
 burn::tensor::repr# Struct MaxPool2dWithIndicesDescription
 `pub struct MaxPool2dWithIndicesDescription {
@@ -52558,7 +53107,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.PermuteOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.PermuteOperationDescription.html
+
 
 burn::tensor::repr# Struct PermuteOperationDescription
 `pub struct PermuteOperationDescription {
@@ -52634,7 +53184,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.QuantizationParametersDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.QuantizationParametersDescription.html
+
 
 burn::tensor::repr# Struct QuantizationParametersDescription
 `pub struct QuantizationParametersDescription {
@@ -52713,7 +53264,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.QuantizeOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.QuantizeOperationDescription.html
+
 
 burn::tensor::repr# Struct QuantizeOperationDescription
 `pub struct QuantizeOperationDescription {
@@ -52790,7 +53342,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.RandomOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.RandomOperationDescription.html
+
 
 burn::tensor::repr# Struct RandomOperationDescription
 `pub struct RandomOperationDescription {
@@ -52863,7 +53416,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ReduceDimWithIndicesDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ReduceDimWithIndicesDescription.html
+
 
 burn::tensor::repr# Struct ReduceDimWithIndicesDescription
 `pub struct ReduceDimWithIndicesDescription {
@@ -52940,7 +53494,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.RepeatDimOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.RepeatDimOperationDescription.html
+
 
 burn::tensor::repr# Struct RepeatDimOperationDescription
 `pub struct RepeatDimOperationDescription {
@@ -53017,7 +53572,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ReshapeDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ReshapeDescription.html
+
 
 burn::tensor::repr# Struct ReshapeDescription
 `pub struct ReshapeDescription {
@@ -53090,7 +53646,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ScalarOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ScalarOperationDescription.html
+
 
 burn::tensor::repr# Struct ScalarOperationDescription
 `pub struct ScalarOperationDescription ## Fields
@@ -53170,7 +53727,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ScatterOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.ScatterOperationDescription.html
+
 
 burn::tensor::repr# Struct ScatterOperationDescription
 `pub struct ScatterOperationDescription {
@@ -53249,7 +53807,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SelectAssignOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SelectAssignOperationDescription.html
+
 
 burn::tensor::repr# Struct SelectAssignOperationDescription
 `pub struct SelectAssignOperationDescription {
@@ -53328,7 +53887,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SelectOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SelectOperationDescription.html
+
 
 burn::tensor::repr# Struct SelectOperationDescription
 `pub struct SelectOperationDescription {
@@ -53405,7 +53965,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SliceAssignOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SliceAssignOperationDescription.html
+
 
 burn::tensor::repr# Struct SliceAssignOperationDescription
 `pub struct SliceAssignOperationDescription {
@@ -53477,7 +54038,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SliceOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SliceOperationDescription.html
+
 
 burn::tensor::repr# Struct SliceOperationDescription
 `pub struct SliceOperationDescription {
@@ -53548,7 +54110,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SwapDimsDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.SwapDimsDescription.html
+
 
 burn::tensor::repr# Struct SwapDimsDescription
 `pub struct SwapDimsDescription {
@@ -53630,7 +54193,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorDescription.html
+
 
 burn::tensor::repr# Struct TensorDescription
 `pub struct TensorDescription {
@@ -53725,7 +54289,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorHandle.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorHandle.html
+
 
 burn::tensor::repr# Struct TensorHandle
 `pub struct TensorHandle where
@@ -53791,7 +54356,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorId.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.TensorId.html
+
 
 burn::tensor::repr# Struct TensorId
 `pub struct TensorId { /* private fields */ }
@@ -53896,7 +54462,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.UnaryOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/struct.UnaryOperationDescription.html
+
 
 burn::tensor::repr# Struct UnaryOperationDescription
 `pub struct UnaryOperationDescription {
@@ -53969,7 +54536,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.BaseOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.BaseOperationDescription.html
+
 
 burn::tensor::repr# Enum BaseOperationDescription
 `pub enum BaseOperationDescription {
@@ -54114,7 +54682,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.BoolOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.BoolOperationDescription.html
+
 
 burn::tensor::repr# Enum BoolOperationDescription
 `pub enum BoolOperationDescription {
@@ -54193,7 +54762,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.FloatOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.FloatOperationDescription.html
+
 
 burn::tensor::repr# Enum FloatOperationDescription
 `pub enum FloatOperationDescription {
@@ -54302,7 +54872,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.Handle.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.Handle.html
+
 
 burn::tensor::repr# Enum Handle
 `pub enum Handle Expand descriptionBackend tensor handle wrapper tracking their creation state
@@ -54352,7 +54923,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.HandleKind.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.HandleKind.html
+
 
 burn::tensor::repr# Enum HandleKind
 `pub enum HandleKind where
@@ -54419,7 +54991,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.IntOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.IntOperationDescription.html
+
 
 burn::tensor::repr# Enum IntOperationDescription
 `pub enum IntOperationDescription {
@@ -54492,7 +55065,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.InterpolateModeDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.InterpolateModeDescription.html
+
 
 burn::tensor::repr# Enum InterpolateModeDescription
 `pub enum InterpolateModeDescription {
@@ -54567,7 +55141,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.ModuleOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.ModuleOperationDescription.html
+
 
 burn::tensor::repr# Enum ModuleOperationDescription
 `pub enum ModuleOperationDescription {
@@ -54704,7 +55279,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.NumericOperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.NumericOperationDescription.html
+
 
 burn::tensor::repr# Enum NumericOperationDescription
 `pub enum NumericOperationDescription Show 46 variants    Add(BinaryOperationDescription),
@@ -54948,7 +55524,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.OperationDescription.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.OperationDescription.html
+
 
 burn::tensor::repr# Enum OperationDescription
 `pub enum OperationDescription {
@@ -55041,7 +55618,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.TensorStatus.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/enum.TensorStatus.html
+
 
 burn::tensor::repr# Enum TensorStatus
 `pub enum TensorStatus {
@@ -55126,7 +55704,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/repr/trait.ReprBackend.html
+# Page : https://docs.rs/burn/latest/burn/tensor/repr/trait.ReprBackend.html
+
 
 burn::tensor::repr# Trait ReprBackend
 `pub trait ReprBackend: Backend {
@@ -55163,7 +55742,8 @@ Sourcefn quantized_tensor_handle(
 ) -&gt; Self::HandleConvert a quantized tensor to a handle.
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/macro.dequant_op_quant.html
+# Page : https://docs.rs/burn/latest/burn/tensor/macro.dequant_op_quant.html
+
 
 burn::tensor# Macro dequant_op_quant
 `macro_rules! dequant_op_quant {
@@ -55175,7 +55755,8 @@ burn::tensor# Macro dequant_op_quant
     ) =&gt; { ... };
 }
 `Expand descriptionAutomatically applies dequantization -&gt; float operation -&gt; quantization.
-## Page : https://docs.rs/burn/latest/burn/tensor/macro.make_element.html
+# Page : https://docs.rs/burn/latest/burn/tensor/macro.make_element.html
+
 
 burn::tensor# Macro make_element
 `macro_rules! make_element {
@@ -55189,7 +55770,8 @@ burn::tensor# Macro make_element
     ) =&gt; { ... };
 }
 `Expand descriptionMacro to implement the element trait for a type.
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Bool.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Bool.html
+
 
 burn::tensor# Struct Bool
 `pub struct Bool;
@@ -55281,7 +55863,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Bytes.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Bytes.html
+
 
 burn::tensor# Struct Bytes
 `pub struct Bytes { /* private fields */ }
@@ -58653,7 +59236,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Data.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Data.html
+
 
 burn::tensor# Struct Data
 `pub struct Data 👎Deprecated since 0.14.0: the internal data format has changed, please use `TensorData
@@ -58810,7 +59394,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.DataSerialize.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.DataSerialize.html
+
 
 burn::tensor# Struct DataSerialize
 `pub struct DataSerialize 👎Deprecated since 0.14.0: the internal data format has changed, please use `TensorData
@@ -58908,7 +59493,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.DimIter.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.DimIter.html
+
 
 burn::tensor# Struct DimIter
 `pub struct DimIter where
@@ -59213,7 +59799,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.DistributionSampler.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.DistributionSampler.html
+
 
 burn::tensor# Struct DistributionSampler
 `pub struct DistributionSampler where
@@ -59270,7 +59857,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Float.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Float.html
+
 
 burn::tensor# Struct Float
 `pub struct Float;
@@ -59434,7 +60022,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Int.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Int.html
+
 
 burn::tensor# Struct Int
 `pub struct Int;
@@ -59597,7 +60186,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.PrintOptions.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.PrintOptions.html
+
 
 burn::tensor# Struct PrintOptions
 `pub struct PrintOptions {
@@ -59660,7 +60250,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Shape.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Shape.html
+
 
 burn::tensor# Struct Shape
 `pub struct Shape {
@@ -59736,7 +60327,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.T.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.T.html
+
 
 burn::tensor# Struct T
 `pub struct T;
@@ -59789,7 +60381,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Tensor.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Tensor.html
+
 
 burn::tensor# Struct Tensor
 `pub struct Tensor where
@@ -62674,7 +63267,8 @@ Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
 Source`impl where
     T: Sub `
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.TensorData.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.TensorData.html
+
 
 burn::tensor# Struct TensorData
 `pub struct TensorData {
@@ -62867,7 +63461,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.Transaction.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.Transaction.html
+
 
 burn::tensor# Struct Transaction
 `pub struct Transaction where
@@ -62931,7 +63526,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.bf16.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.bf16.html
+
 
 burn::tensor# Struct bf16
 `pub struct bf16(/* private fields */);
@@ -64037,7 +64633,8 @@ Source`impl where
     T: Num + for `
 Source`impl where
     T: NumOps `
-## Page : https://docs.rs/burn/latest/burn/tensor/struct.f16.html
+# Page : https://docs.rs/burn/latest/burn/tensor/struct.f16.html
+
 
 burn::tensor# Struct f16
 `pub struct f16(/* private fields */);
@@ -65148,7 +65745,8 @@ Source`impl where
     T: Num + for `
 Source`impl where
     T: NumOps `
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.DType.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.DType.html
+
 
 burn::tensor# Enum DType
 `pub enum DType {
@@ -65259,7 +65857,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.DataError.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.DataError.html
+
 
 burn::tensor# Enum DataError
 `pub enum DataError {
@@ -65309,7 +65908,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.Distribution.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.Distribution.html
+
 
 burn::tensor# Enum Distribution
 `pub enum Distribution {
@@ -65399,7 +65999,8 @@ Sourcetype Error =  The type returned in the event of a conversion error.Sourcef
     V: MultiLane `
 Sourcefn vzip(self) -&gt; VSource`impl where
     T: for `
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.DistributionSamplerKind.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.DistributionSamplerKind.html
+
 
 burn::tensor# Enum DistributionSamplerKind
 `pub enum DistributionSamplerKind where
@@ -65454,7 +66055,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.FloatDType.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.FloatDType.html
+
 
 burn::tensor# Enum FloatDType
 `pub enum FloatDType {
@@ -65514,7 +66116,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.Precision.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.Precision.html
+
 
 burn::tensor# Enum Precision
 `pub enum Precision {
@@ -65593,7 +66196,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/enum.TensorPrimitive.html
+# Page : https://docs.rs/burn/latest/burn/tensor/enum.TensorPrimitive.html
+
 
 burn::tensor# Enum TensorPrimitive
 `pub enum TensorPrimitive where
@@ -65660,7 +66264,8 @@ Sourcetype Error = InfallibleThe type returned in the event of a conversion erro
 Sourcetype Error =  The type returned in the event of a conversion error.Sourcefn try_into(self) -&gt; Result Performs the conversion.Source`impl where
     V: MultiLane `
 Sourcefn vzip(self) -&gt; V
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.BasicAutodiffOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.BasicAutodiffOps.html
+
 
 burn::tensor# Trait BasicAutodiffOps
 `pub trait BasicAutodiffOps where
@@ -65699,7 +66304,8 @@ Sourcetype InnerKind = BoolSource`impl where
 Sourcetype InnerKind = FloatSource`impl where
     B: AutodiffBackend,`
 Sourcetype InnerKind = Int
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.BasicOps.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.BasicOps.html
+
 
 burn::tensor# Trait BasicOps
 `pub trait BasicOps where
@@ -66184,7 +66790,8 @@ Sourcetype Elem = boolSource`impl where
 Sourcetype Elem =  Source`impl where
     B: Backend,`
 Sourcetype Elem =
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.BroadcastArgs.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.BroadcastArgs.html
+
 
 burn::tensor# Trait BroadcastArgs
 `pub trait BroadcastArgs Expand descriptionTrait used for broadcast arguments.
@@ -66195,7 +66802,8 @@ Source`impl Sourcefn into_shape(self, _shape: &amp;Shape) -&gt; ShapeSource`impl
     E: Element,`
 Sourcefn into_shape(self, shape: &amp;Shape) -&gt; Shape## Implementors
 Source`impl
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.Element.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.Element.html
+
 
 burn::tensor# Trait Element
 `pub trait Element:
@@ -66235,7 +66843,8 @@ Sourcefn dtype() -&gt; DTypeSource`impl Element for u64`
 Sourcefn dtype() -&gt; DType## Implementors
 Source`impl Element for bf16`
 Source`impl Element for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementComparison.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementComparison.html
+
 
 burn::tensor# Trait ElementComparison
 `pub trait ElementComparison {
@@ -66263,7 +66872,8 @@ Sourcefn cmp(&amp;self, other: &amp;u32) -&gt; OrderingSource`impl ElementCompar
 Sourcefn cmp(&amp;self, other: &amp;u64) -&gt; Ordering## Implementors
 Source`impl ElementComparison for bf16`
 Source`impl ElementComparison for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementConversion.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementConversion.html
+
 
 burn::tensor# Trait ElementConversion
 `pub trait ElementConversion {
@@ -66322,7 +66932,8 @@ Sourcefn from_elem where
     E: Element,## Implementors
 Source`impl ElementConversion for bf16`
 Source`impl ElementConversion for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementPrecision.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementPrecision.html
+
 
 burn::tensor# Trait ElementPrecision
 `pub trait ElementPrecision {
@@ -66348,7 +66959,8 @@ Sourcefn precision() -&gt; PrecisionSource`impl ElementPrecision for u64`
 Sourcefn precision() -&gt; Precision## Implementors
 Source`impl ElementPrecision for bf16`
 Source`impl ElementPrecision for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementRandom.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.ElementRandom.html
+
 
 burn::tensor# Trait ElementRandom
 `pub trait ElementRandom {
@@ -66396,7 +67008,8 @@ Sourcefn random where
     R: RngCore,## Implementors
 Source`impl ElementRandom for bf16`
 Source`impl ElementRandom for f16`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.MovedimArgs.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.MovedimArgs.html
+
 
 burn::tensor# Trait MovedimArgs
 `pub trait MovedimArgs {
@@ -66409,7 +67022,8 @@ This trait is not dyn compatible.In older versions of Rust, dyn compatibility wa
 Source`impl MovedimArgs for i32`
 Sourcefn into_dim_vec Source`impl MovedimArgs for usize`
 Sourcefn into_dim_vec Source`impl MovedimArgs for Vec Sourcefn into_dim_vec Source`impl MovedimArgs for Vec Sourcefn into_dim_vec ## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.Numeric.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.Numeric.html
+
 
 burn::tensor# Trait Numeric
 `pub trait Numeric where
@@ -67619,7 +68233,8 @@ Source`impl where
     B: Backend,`
 Source`impl where
     B: Backend,`
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.RangesArg.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.RangesArg.html
+
 
 burn::tensor# Trait RangesArg
 `pub trait RangesArg     fn clamp_range(start: usize, end: usize, dim: usize) -&gt; (usize, usize) { ... }
@@ -67633,7 +68248,8 @@ Sourcefn clamp_range(start: usize, end: usize, dim: usize) -&gt; (usize, usize)C
 ## Dyn Compatibility
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementations on Foreign Types
 Source`impl Sourcefn into_ranges(self, shape: Shape) -&gt; [Range Source`impl Sourcefn into_ranges(self, shape: Shape) -&gt; [Range Source`impl Sourcefn into_ranges(self, shape: Shape) -&gt; [Range ## Implementors
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.ReshapeArgs.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.ReshapeArgs.html
+
 
 burn::tensor# Trait ReshapeArgs
 `pub trait ReshapeArgs where B: Backend,
@@ -67652,7 +68268,8 @@ Source`impl Sourcefn into_shape where
     B: Backend,
     K: BasicOps ## Implementors
 Source`impl
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.TensorKind.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.TensorKind.html
+
 
 burn::tensor# Trait TensorKind
 `pub trait TensorKind where
@@ -67677,7 +68294,8 @@ Sourcetype Primitive =  Source`impl where
 Sourcetype Primitive = TensorPrimitive Source`impl where
     B: Backend,`
 Sourcetype Primitive =
-## Page : https://docs.rs/burn/latest/burn/tensor/trait.TensorMetadata.html
+# Page : https://docs.rs/burn/latest/burn/tensor/trait.TensorMetadata.html
+
 
 burn::tensor# Trait TensorMetadata
 `pub trait TensorMetadata:
@@ -67697,7 +68315,8 @@ Sourcefn shape(&amp;self) -&gt; ShapeThe shape of the tensor.
 This trait is not dyn compatible.In older versions of Rust, dyn compatibility was called "object safety", so this trait is not object safe.## Implementors
 Source`impl where
     B: Backend,`
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.argsort.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.argsort.html
+
 
 burn::tensor# Function argsort
 `pub fn argsort where
@@ -67726,7 +68345,8 @@ This is a fallback solution that used only when the backend doesn’t have the c
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.argwhere_data.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.argwhere_data.html
+
 
 burn::tensor# Function argwhere_data
 `pub fn argwhere_data where
@@ -67747,7 +68367,8 @@ This is a fallback solution that used only when the backend doesn’t have the c
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.cartesian_grid.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.cartesian_grid.html
+
 
 burn::tensor# Function cartesian_grid
 `pub fn cartesian_grid where
@@ -67778,7 +68399,8 @@ Panics if `D2
        println!("{}", result);
    }
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.check_closeness.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.check_closeness.html
+
 
 burn::tensor# Function check_closeness
 `pub fn check_closeness where
@@ -67848,7 +68470,8 @@ Epsilon: 1e-8
 
 Closeness check complete.
 `
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.chunk.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.chunk.html
+
 
 burn::tensor# Function chunk
 `pub fn chunk where
@@ -67875,7 +68498,8 @@ This is a fallback solution that is used only when the backend doesn’t have th
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.narrow.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.narrow.html
+
 
 burn::tensor# Function narrow
 `pub fn narrow where
@@ -67905,7 +68529,8 @@ burn::tensor# Function narrow
 ## Returns
 
 A new tensor with the given dimension narrowed to the given range.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.read_sync.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.read_sync.html
+
 
 burn::tensor# Function read_sync
 `pub fn read_sync where
@@ -67914,12 +68539,14 @@ burn::tensor# Function read_sync
 On WASM futures cannot block, so this only succeeds if the future returns immediately.
 If you want to handle this error, please use
 try_read_sync instead.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.set_print_options.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.set_print_options.html
+
 
 burn::tensor# Function set_print_options
 `pub fn set_print_options(options: PrintOptions)
 `Expand descriptionSet print options
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.sort.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.sort.html
+
 
 burn::tensor# Function sort
 `pub fn sort where
@@ -67948,7 +68575,8 @@ This is a fallback solution that used only when the backend doesn’t have the c
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.sort_with_indices.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.sort_with_indices.html
+
 
 burn::tensor# Function sort_with_indices
 `pub fn sort_with_indices where
@@ -67978,7 +68606,8 @@ This is a fallback solution that used only when the backend doesn’t have the c
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.split.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.split.html
+
 
 burn::tensor# Function split
 `pub fn split where
@@ -68010,7 +68639,8 @@ This (and the following) are fallback solutions that is used only when the backe
 Ideally, it is supposed to be implemented by the backend and the backend implementation will be resolved
 by static dispatch. It is not designed for direct usage by users, and not recommended to import
 or use this function directly.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.split_with_sizes.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.split_with_sizes.html
+
 
 burn::tensor# Function split_with_sizes
 `pub fn split_with_sizes where
@@ -68037,7 +68667,8 @@ A vector of tensors.
 ## Remarks
 
 Fallback solution for backends with no equivalent functionality.
-## Page : https://docs.rs/burn/latest/burn/tensor/fn.try_read_sync.html
+# Page : https://docs.rs/burn/latest/burn/tensor/fn.try_read_sync.html
+
 
 burn::tensor# Function try_read_sync
 `pub fn try_read_sync where
@@ -68045,11 +68676,13 @@ burn::tensor# Function try_read_sync
 `Expand descriptionRead a future synchronously.
 On WASM futures cannot block, so this only succeeds if the future returns immediately.
 otherwise this returns None.
-## Page : https://docs.rs/burn/latest/burn/tensor/type.Device.html
+# Page : https://docs.rs/burn/latest/burn/tensor/type.Device.html
+
 
 burn::tensor# Type Alias Device
 `pub type Device Expand descriptionDevice type used by the backend.
-## Page : https://docs.rs/burn/latest/burn/macro.constant.html
+# Page : https://docs.rs/burn/latest/burn/macro.constant.html
+
 
 burn# Macro constant
 `macro_rules! constant {
@@ -68058,7 +68691,8 @@ burn# Macro constant
     ($type:ty) =&gt; { ... };
 }
 `Expand descriptionConstant macro.
-## Page : https://docs.rs/burn/latest/burn/type.LearningRate.html
+# Page : https://docs.rs/burn/latest/burn/type.LearningRate.html
+
 
 burn# Type Alias LearningRate
 `pub type LearningRate = f64;
