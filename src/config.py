@@ -10,4 +10,4 @@ logger.info(f"PROJ_ROOT path is: {PROJ_ROOT}")
 
 DATA_DIR = PROJ_ROOT / 'data'
 DOCUMENTS_DIR = DATA_DIR / 'documentation/rust'
-
+RAG_FILE = DOCUMENTS_DIR / 'doc.md'
