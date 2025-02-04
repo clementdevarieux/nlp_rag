@@ -3,7 +3,8 @@ import requests
 import json
 
 #call LLM using Ollama api
-def call_llm(user_input, relevant_document, full_response: list, llm: str):
+def call_llm(user_input, relevant_document, llm: str):
+    full_response = []
     url = 'http://localhost:11434/api/generate'
     data = {
         "model": llm,
