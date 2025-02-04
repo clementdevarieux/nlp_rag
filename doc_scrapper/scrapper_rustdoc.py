@@ -16,14 +16,29 @@ def to_markdown(html_content):
 
     text = re.sub(r'<h3 class="code-header"[^>]*>(.*?)</h3>', r'`\1`\n', text, flags=re.DOTALL)
     text = re.sub(r'<h3[^>]*>(.*?)</h3>', r'### \1\n', text, flags=re.DOTALL)
+    text = re.sub(r'<h4[^>]*>(.*?)</h4>', r'### \1\n', text, flags=re.DOTALL)
     text = re.sub(r'<a class="doc-anchor" [^>]*>(.*?)</a>', r'', text, flags=re.DOTALL)
     text = re.sub(r'<a[^>]*class="anchor"[^>]*>(.*?)</a>', r'', text, flags=re.DOTALL)
     text = re.sub(r'<a[^>]*>(.*?)</a>', r'\1', text, flags=re.DOTALL)
     text = re.sub(r'<code[^>]*>(.*?)</code>', r'`\1\n`', text, flags=re.DOTALL)
     text = re.sub(r'<li[^>]*>(.*?)</li>', r'- \1\n', text, flags=re.DOTALL)
+    text = re.sub(r'<section[^>]*>(.*?)</section>', r'\1\n', text, flags=re.DOTALL)
     text = re.sub(r'\&lt;', r' <', text, flags=re.DOTALL)
+    text = re.sub(r'\&gt;', r'> ', text, flags=re.DOTALL)
     # Supprimer toutes les balises HTML restantes
-    text = re.sub(r'<[^>]+>', '', text)
+    #text = re.sub(r'<[^>]+>', '', text)
+
+    text = re.sub(r'<h5[^>]*>(.*?)</h5>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<p[^>]*>(.*?)</p>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<details[^>]*>(.*?)</details>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<div[^>]*>(.*?)</div>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<span[^>]*>(.*?)</span>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<ul[^>]*>(.*?)</ul>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<pre[^>]*>(.*?)</pre>', r'\1', text, flags=re.DOTALL)
+    text = re.sub(r'<wbr/>', r'', text, flags=re.DOTALL)
+
+    text = re.sub(r'<summary class="hideme"[^>]*>(.*?)</summary>', r'', text, flags=re.DOTALL)
+    text = re.sub(r'<summary[^>]*>(.*?)</summary>', r'\1', text, flags=re.DOTALL)
     # Retirer les espaces multiples
     text = re.sub(r'\n\s*\n', '\n\n', text)
     text = text.strip()
