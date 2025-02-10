@@ -2,9 +2,24 @@
 -- rag
 [ ] méthode de chunk à tester
 
---- modèle experimenté
-[ ] BAAI/bge-base-en-v1.5
+-- retreiver
+[ ] jaccard
+[ ] tf-idf
+[ ] embedding with transformers
+[ ] HyDE
 
+
+-- query classification
+[ ]
+
+-- re Ranking
+scoring metrics :
+BM25
+model to score relevence
+
+
+--
+MRR
 
 --- eval retreival methods
 
