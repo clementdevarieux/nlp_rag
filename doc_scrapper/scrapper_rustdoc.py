@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from src.config import RAG_FILE, DOCUMENTS_DIR
 
 BASE_URL = "https://docs.rs"
-CRATE_URL = "https://docs.rs/burn/latest/burn/index.html"
+CRATE_URL = "https://docs.rs/burn/latest/burn/tensor/index.html"
 
 
 
