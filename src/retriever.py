@@ -6,6 +6,11 @@ from transformers import BertTokenizer, BertModel
 import torch
 import torch.nn.functional as F
 
+
+
+
+
+
 def jaccard_similarity(user_query, chunk):
     user_query = user_query.lower().split(" ")
     chunk = chunk.lower().split(" ")
@@ -14,7 +19,7 @@ def jaccard_similarity(user_query, chunk):
     return len(intersection) / len(union)
 
 
-def retreive_response(chunks_struct: list, user_query: str) -> dict:
+def retreive_response(chunks_struct: list, user_query: str) -> int:
     similarities = []
     for i, chunk in enumerate(chunks_struct):
         similarity = jaccard_similarity(user_query, chunk['chunk'])
