@@ -1,5 +1,8 @@
-def truckates_h2(texts: list[str]):
-    def parse_class_add_title(text):
+from typing import List, Dict
+
+
+def trunkate_on_h2(texts: list[str]) -> list[dict[str, str]]:
+    def parse_class_add_title(text: str):
         chunks = text.split("##")
         title = chunks[0].split("\n")[0]
         return [
