@@ -9,7 +9,7 @@ path = Path(DOCUMENTS_DIR)
 
 texts = []
 for filename in path.glob("*.md"):
-    with open(filename) as f:
+    with open(filename, encoding='utf-8') as f:
         texts.append(f.read())
 
 # %%
@@ -21,7 +21,7 @@ chunks = trunkate_on_h2(texts)
 fittest_document_id = jaccard_retriever(chunks, user_query)
 #using jaccard_similarity
 # fittest_document = get_fittest_chunk(relevent_documents, user_query)
-fittest_document_id = tfidf_retriever(chunks, user_query)
+# fittest_document_id = tfidf_retriever(chunks, user_query)
 
 fittest_document = chunks[fittest_document_id[0]]
 
