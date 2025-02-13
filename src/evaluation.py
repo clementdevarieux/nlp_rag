@@ -94,10 +94,6 @@ def evaluate_rag_rouge(evaluation_data,
         best_retrieved_doc = chunks[retrieved_indices[0]]
         generated_response = generated_response_func(question, best_retrieved_doc, llm='llama2')
 
-        print("generated_response", generated_response)
-        print("reference_response", reference_response)
-        print("\n\n")
-
         rouge_score = rouge.compute(predictions=[generated_response], references=[reference_response], use_aggregator=False)
 
         rouge_scores.append(rouge_score)

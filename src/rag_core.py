@@ -19,7 +19,7 @@ user_query: str = "how to sum two tensor"
 chunks = trunkate_on_h2(texts)
 
 fittest_document_id = jaccard_retriever(chunks, user_query)
-#using jaccard_similarity
+# using jaccard_similarity
 # fittest_document = get_fittest_chunk(relevent_documents, user_query)
 # fittest_document_id = tfidf_retriever(chunks, user_query)
 
