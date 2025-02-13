@@ -1,6 +1,6 @@
 [
     {
-        "question": "Comment exécuter une opération sur un tenseur et modifier sa valeur dans `burn` ?",
+        "question": "Comment modifier la valeur d'un tensor pour modifier directement ses poids ?",
         "indices": [3633],
         "reference_response": "Pour exécuter une opération sur un tenseur et modifier sa valeur, vous pouvez utiliser la méthode `inplace`. Cette méthode vous permet de muter un tenseur en utilisant des opérations propriétaires. Notez que cela ne garantit pas la réutilisation du même tampon de données, mais cela peut être utile si vous souhaitez mettre à jour les poids d'un modèle mutable, par exemple."
     },

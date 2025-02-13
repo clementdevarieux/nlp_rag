@@ -1,11 +1,21 @@
 import json
-from sklearn.metrics import precision_score, recall_score, f1_score
+from pathlib import Path
+
 from nltk.translate.bleu_score import sentence_bleu
 from rouge import Rouge
+from sklearn.metrics import precision_score, recall_score, f1_score
 
-with open('questions_evaluation.json', 'r') as f:
-    evaluation = json.load(f)
+from src.config import TEST_DIR
+from src.config import DOCUMENTS_DIR
+from src.llm_query import call_llm
+from src.retriever import tfidf_retriever
+from src.chunk import trunkate_on_h2
 
+with open(TEST_DIR / 'questions_evaluation.json', 'r') as f:
+    eval_json = json.load(f)
+
+
+## TODO make it work
 def evaluate_rag(evaluation_data, retrieved_indices_func, generated_response_func, chunks):
     precision_scores = []
     recall_scores = []
@@ -23,13 +33,15 @@ def evaluate_rag(evaluation_data, retrieved_indices_func, generated_response_fun
         # Simuler la récupération et la génération
         retrieved_indices = retrieved_indices_func(chunks, question)
 
+        if isinstance(retrieved_indices, int):
+            retrieved_indices = [retrieved_indices]
+
         best_retrieved_doc = chunks[retrieved_indices[0]]
         generated_response = generated_response_func(question, best_retrieved_doc, llm='llama2')
 
-        # Évaluation de la récupération
-        precision = precision_score(true_indices, retrieved_indices, average='binary')
-        recall = recall_score(true_indices, retrieved_indices, average='binary')
-        f1 = f1_score(true_indices, retrieved_indices, average='binary')
+        precision = precision_score(true_indices, retrieved_indices, average=None)
+        recall = recall_score(true_indices, retrieved_indices, average=None)
+        f1 = f1_score(true_indices, retrieved_indices, average=None)
 
         precision_scores.append(precision)
         recall_scores.append(recall)
@@ -64,4 +76,17 @@ def generated_response_func(question):
     # Simuler la génération de la réponse
     return "La transposition d'un tenseur est une opération mathématique."
 
-evaluate_rag(evaluation, retrieved_indices_func, generated_response_func)
+
+if __name__ == '__main__':
+    path = Path(DOCUMENTS_DIR)
+
+    texts = []
+    for filename in path.glob("*.md"):
+        with open(filename) as f:
+            texts.append(f.read())
+
+    chunks = trunkate_on_h2(texts)
+    evaluate_rag(eval_json, tfidf_retriever, call_llm, chunks)
+
+
+#%%
