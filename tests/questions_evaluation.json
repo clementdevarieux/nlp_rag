@@ -1,182 +1,27 @@
 [
     {
-        "question": "Comment modifier la valeur d'un tensor pour modifier directement ses poids ?",
-        "indices": [3633],
-        "reference_response": "Pour exécuter une opération sur un tenseur et modifier sa valeur, vous pouvez utiliser la méthode `inplace`. Cette méthode vous permet de muter un tenseur en utilisant des opérations propriétaires. Notez que cela ne garantit pas la réutilisation du même tampon de données, mais cela peut être utile si vous souhaitez mettre à jour les poids d'un modèle mutable, par exemple."
+        "question": "What function is used to check the closeness of two tensors ?",
+        "indices": [2378],
+        "reference_response": "The function used to check the closeness of two tensors is check_closeness."
     },
     {
-        "question": "Comment appliquer une opération exponentielle élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3634],
-        "reference_response": "Pour appliquer une opération exponentielle élément par élément sur un tenseur, utilisez la méthode `exp`. Cela appliquera la fonction exponentielle à chaque élément du tenseur, ce qui est utile pour des transformations non linéaires dans des modèles d'apprentissage automatique."
+        "question": "What are the differents modules available for the tensor ?",
+        "indices": [2373],
+        "reference_response": "The different modules available for the tensor are:\n\nactivation – The activation module.\nbackend – The backend module.\ncast – Tensor element casting.\ncontainer – The container module.\nloss – The loss module.\nmodule – The burn module.\nops – Operations on tensors module.\nquantization – Tensor quantization module.\nrepr – Burn Tensor representation."
     },
     {
-        "question": "Comment appliquer une opération logarithmique naturelle élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3635],
-        "reference_response": "Utilisez la méthode `log` pour appliquer une opération logarithmique naturelle élément par élément sur un tenseur. Cela est souvent utilisé pour stabiliser la variance dans les données ou pour transformer des distributions."
+        "question": "Which traits can be used to list all operations that can be applied to a tensor ?",
+        "indices": [2377],
+        "reference_response": "The different modules available for the tensor are:\n\nactivation – The activation module.\nbackend – The backend module.\ncast – Tensor element casting.\ncontainer – The container module.\nloss – The loss module.\nmodule – The burn module.\nops – Operations on tensors module.\nquantization – Tensor quantization module.\nrepr – Burn Tensor representation."
     },
     {
-        "question": "Comment appliquer le logarithme naturel de un plus un tenseur, élément par élément, dans `burn` ?",
-        "indices": [3636],
-        "reference_response": "La méthode `log1p` est utilisée pour appliquer le logarithme naturel de un plus un tenseur, élément par élément. Cela est particulièrement utile pour éviter les erreurs numériques lorsque vous travaillez avec des petites valeurs proches de zéro."
+        "question": "What arguments are required in the split function ?",
+        "indices": [335],
+        "reference_response": "The arguments required in the split function are:\n\ntensor – The tensor.\nsplit_size – The size of a single chunk.\ndim – The dimension along which to split the tensor."
     },
     {
-        "question": "Comment appliquer la fonction d'erreur élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3637],
-        "reference_response": "Pour appliquer la fonction d'erreur élément par élément sur un tenseur, utilisez la méthode `erf`. Cette fonction est souvent utilisée dans les statistiques et les modèles probabilistes."
-    },
-    {
-        "question": "Comment appliquer une opération réciproque élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3638],
-        "reference_response": "Utilisez la méthode `recip` pour appliquer une opération réciproque élément par élément sur un tenseur. Cela est utile lorsque vous avez besoin de l'inverse de chaque élément du tenseur."
-    },
-    {
-        "question": "Comment appliquer une opération de racine carrée élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3639],
-        "reference_response": "La méthode `sqrt` est utilisée pour appliquer une opération de racine carrée élément par élément sur un tenseur. Cela est couramment utilisé pour normaliser les données ou pour des transformations non linéaires."
-    },
-    {
-        "question": "Comment appliquer une opération cosinus élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3640],
-        "reference_response": "Pour appliquer une opération cosinus élément par élément sur un tenseur, utilisez la méthode `cos`. Cela est utile pour des transformations trigonométriques dans des modèles de traitement du signal."
-    },
-    {
-        "question": "Comment appliquer une opération sinus élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3641],
-        "reference_response": "Utilisez la méthode `sin` pour appliquer une opération sinus élément par élément sur un tenseur. Comme pour le cosinus, cela est utile dans le traitement du signal et d'autres applications trigonométriques."
-    },
-    {
-        "question": "Comment appliquer une opération tangente hyperbolique élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3642],
-        "reference_response": "La méthode `tanh` est utilisée pour appliquer une opération tangente hyperbolique élément par élément sur un tenseur. C'est une fonction d'activation couramment utilisée dans les réseaux de neurones."
-    },
-    {
-        "question": "Comment appliquer une opération d'arrondi élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3643],
-        "reference_response": "Utilisez la méthode `round` pour appliquer une opération d'arrondi élément par élément sur un tenseur. Cette méthode utilise la stratégie 'round half to even' pour les valeurs à mi-chemin."
-    },
-    {
-        "question": "Comment appliquer une opération de plancher élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3644],
-        "reference_response": "La méthode `floor` est utilisée pour appliquer une opération de plancher élément par élément sur un tenseur, ce qui est utile pour tronquer les valeurs décimales vers le bas."
-    },
-    {
-        "question": "Comment appliquer une opération de plafond élément par élément sur un tenseur dans `burn` ?",
-        "indices": [3645],
-        "reference_response": "Utilisez la méthode `ceil` pour appliquer une opération de plafond élément par élément sur un tenseur, ce qui est utile pour arrondir les valeurs décimales vers le haut."
-    },
-    {
-        "question": "Comment créer un tenseur à partir de flottants (f32) sur un dispositif donné dans `burn` ?",
-        "indices": [3646],
-        "reference_response": "Pour créer un tenseur à partir de flottants (f32) sur un dispositif donné, utilisez la méthode `from_floats`. Cela vous permet de spécifier la forme et le dispositif pour le tenseur."
-    },
-    {
-        "question": "Comment convertir un tenseur en entier dans `burn` ?",
-        "indices": [3647],
-        "reference_response": "Utilisez la méthode `int` pour convertir un tenseur en entier. Cela est utile lorsque vous avez besoin de travailler avec des valeurs entières dans vos calculs."
-    },
-    {
-        "question": "Comment créer un tenseur avec des valeurs aléatoires dans `burn` ?",
-        "indices": [3648],
-        "reference_response": "Pour créer un tenseur avec des valeurs aléatoires, utilisez la méthode `random_like`. Cela génère un tenseur de la même forme et dispositif que le tenseur d'origine, rempli de valeurs aléatoires."
-    },
-    {
-        "question": "Comment créer un tenseur one-hot dans `burn` ?",
-        "indices": [3649],
-        "reference_response": "Utilisez la méthode `one_hot` pour créer un tenseur one-hot. Cela est utile pour convertir des indices en représentations one-hot, souvent utilisées dans les modèles de classification."
-    },
-    {
-        "question": "Comment effectuer une multiplication matricielle dans `burn` ?",
-        "indices": [3650],
-        "reference_response": "Pour effectuer une multiplication matricielle, utilisez la méthode `matmul`. Assurez-vous que les dimensions des tenseurs sont compatibles pour la multiplication."
-    },
-    {
-        "question": "Comment calculer la variance le long d'une dimension donnée dans `burn` ?",
-        "indices": [3651],
-        "reference_response": "Utilisez la méthode `var` pour calculer la variance le long d'une dimension donnée. Cela est utile pour comprendre la dispersion des données dans votre tenseur."
-    },
-    {
-        "question": "Comment calculer la variance sans correction de Bessel le long d'une dimension donnée dans `burn` ?",
-        "indices": [3652],
-        "reference_response": "La méthode `var_bias` calcule la variance sans appliquer la correction de Bessel. Cela est utile lorsque vous travaillez avec des populations complètes plutôt qu'avec des échantillons."
-    },
-    {
-        "question": "Comment calculer la variance et la moyenne le long d'une dimension donnée dans `burn` ?",
-        "indices": [3653],
-        "reference_response": "Utilisez la méthode `var_mean` pour calculer à la fois la variance et la moyenne le long d'une dimension donnée. Cela vous donne une vue complète de la distribution des données."
-    },
-    {
-        "question": "Comment convertir un tenseur en un type de données flottant spécifié dans `burn` ?",
-        "indices": [3655],
-        "reference_response": "Utilisez la méthode `cast` pour convertir un tenseur en un type de données flottant spécifié. Cela est utile pour assurer la compatibilité des types de données dans vos calculs."
-    },
-    {
-        "question": "Comment détacher un tenseur du graphe d'autodiff dans `burn` ?",
-        "indices": [3656],
-        "reference_response": "Utilisez la méthode `detach` pour détacher un tenseur du graphe d'autodiff. Cela est utile pour éviter que certaines opérations ne soient suivies lors de la rétropropagation."
-    },
-    {
-        "question": "Comment marquer un tenseur pour conserver les gradients lors de la rétropropagation dans `burn` ?",
-        "indices": [3657],
-        "reference_response": "Utilisez la méthode `require_grad` pour marquer un tenseur afin qu'il conserve les gradients lors de la rétropropagation. Cela est essentiel pour l'entraînement des modèles."
-    },
-    {
-        "question": "Comment vérifier si un tenseur nécessite des gradients lors de la rétropropagation dans `burn` ?",
-        "indices": [3658],
-        "reference_response": "Utilisez la méthode `is_require_grad` pour vérifier si un tenseur nécessite des gradients lors de la rétropropagation. Cela vous aide à gérer les dépendances de calcul dans votre modèle."
-    },
-    {
-        "question": "Comment marquer un tenseur comme suivi ou non suivi pour les gradients dans `burn` ?",
-        "indices": [3659],
-        "reference_response": "Utilisez la méthode `set_require_grad` pour marquer un tenseur comme suivi ou non suivi pour les gradients. Cela vous permet de contrôler quelles parties de votre modèle sont mises à jour pendant l'entraînement."
-    },
-    {
-        "question": "Comment calculer la matrice de covariance entre différentes entrées le long d'une dimension donnée dans `burn` ?",
-        "indices": [3660],
-        "reference_response": "Utilisez la méthode `cov` pour calculer la matrice de covariance entre différentes entrées le long d'une dimension donnée. Cela est utile pour analyser les relations linéaires entre les variables."
-    },
-    {
-        "question": "Comment convertir un tenseur en un type de données de précision inférieure basé sur un schéma de quantification dans `burn` ?",
-        "indices": [3661],
-        "reference_response": "Utilisez la méthode `quantize` pour convertir un tenseur en un type de données de précision inférieure basé sur un schéma de quantification. Cela est utile pour réduire la taille du modèle et accélérer les calculs."
-    },
-    {
-        "question": "Comment convertir dynamiquement un tenseur en un type de données de précision inférieure basé sur un schéma de quantification dans `burn` ?",
-        "indices": [3662],
-        "reference_response": "Utilisez la méthode `quantize_dynamic` pour convertir dynamiquement un tenseur en un type de données de précision inférieure. Cela est utile lorsque les paramètres de quantification ne sont pas connus à l'avance."
-    },
-    {
-        "question": "Comment convertir un tenseur en un type de données de précision supérieure dans `burn` ?",
-        "indices": [3663],
-        "reference_response": "Utilisez la méthode `dequantize` pour convertir un tenseur en un type de données de précision supérieure. Cela est utile pour restaurer la précision après des calculs quantifiés."
-    },
-    {
-        "question": "Comment créer un tenseur entier sur un dispositif spécifié dans `burn` ?",
-        "indices": [3664],
-        "reference_response": "Utilisez la méthode `arange` pour créer un tenseur entier sur un dispositif spécifié. Cela génère une séquence d'entiers dans une plage donnée."
-    },
-    {
-        "question": "Comment créer un tenseur entier avec un pas spécifié sur un dispositif donné dans `burn` ?",
-        "indices": [3665],
-        "reference_response": "Utilisez la méthode `arange_step` pour créer un tenseur entier avec un pas spécifié sur un dispositif donné. Cela vous permet de générer des séquences d'entiers avec un intervalle personnalisé."
-    },
-    {
-        "question": "Comment créer un tenseur one-hot à partir d'un tenseur d'indices dans `burn` ?",
-        "indices": [3666],
-        "reference_response": "Utilisez la méthode `one_hot` pour créer un tenseur one-hot à partir d'un tenseur d'indices. Cela est utile pour convertir des indices catégoriels en représentations one-hot."
-    },
-    {
-        "question": "Comment créer un tenseur à partir d'entiers (i32) sur un dispositif donné dans `burn` ?",
-        "indices": [3667],
-        "reference_response": "Utilisez la méthode `from_ints` pour créer un tenseur à partir d'entiers (i32) sur un dispositif donné. Cela vous permet de spécifier la forme et le dispositif pour le tenseur."
-    },
-    {
-        "question": "Comment convertir un tenseur en flottant dans `burn` ?",
-        "indices": [3668],
-        "reference_response": "Utilisez la méthode `float` pour convertir un tenseur en flottant. Cela est utile lorsque vous avez besoin de travailler avec des valeurs à virgule flottante dans vos calculs."
-    },
-    {
-        "question": "Comment générer une grille cartésienne pour une forme de tenseur donnée sur un dispositif spécifié dans `burn` ?",
-        "indices": [3669],
-        "reference_response": "Utilisez la méthode `cartesian_grid` pour générer une grille cartésienne pour une forme de tenseur donnée sur un dispositif spécifié. Cela est utile pour créer des coordonnées de grille pour des opérations spatiales."
+        "question": "Describe to me the split function ?",
+        "indices": [334],
+        "reference_response": "The split function in burn::tensor splits a tensor along a specified dimension into equally sized chunks, if possible. Each chunk has a size defined by split_size. If the tensor size along the given dimension is not perfectly divisible by split_size, the last chunk will be smaller."
     }
 ]
