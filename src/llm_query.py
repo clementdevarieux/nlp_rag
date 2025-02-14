@@ -2,16 +2,14 @@ import json
 
 import requests
 
-from src.prompt import build_prompt
-
 
 # call LLM using Ollama api
-def call_llm(user_input: str, relevant_document: str, llm: str) -> str:
+def call_llm(prompt, llm: str) -> str:
     full_response = []
     url = 'http://localhost:11434/api/generate'
     data = {
         "model": llm,
-        "prompt": build_prompt(query=user_input, context_str=relevant_document)
+        "prompt": prompt
     }
     headers = {'Content-Type': 'application/json'}
     response = requests.post(url, data=json.dumps(data), headers=headers, stream=True)

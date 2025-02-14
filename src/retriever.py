@@ -1,14 +1,16 @@
+import json
+from pathlib import Path
+
 import numpy as np
-import torch
+from FlagEmbedding import FlagModel
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from transformers import BertTokenizer, BertModel
-from FlagEmbedding import FlagModel
+from tqdm import tqdm
 
-from pathlib import Path
-from src.config import DOCUMENTS_DIR
-from src.chunk import trunkate_on_h2
-import gc
+from src.chunk import truncate_on_h2
+from src.config import DOCUMENTS_DIR, PROCESSED_DIR
+from src.llm_query import call_llm
+from src.prompt import build_prompt_question_generation, build_prompt_question_hyde
 
 
 def get_fittest_chunk(ordered_similarities: list, user_query: str) -> dict:
@@ -48,7 +50,8 @@ def tfidf_retriever(chunks_struct: list, user_query: str) -> list[int]:
     fittest_chunk_index = np.argmax(cosin_similarities)
     return [int(fittest_chunk_index)]
 
-def transformers_retriever(chunks_struct: list, user_query: str):
+
+def transformers_retriever(chunks_struct: list, user_query: str) -> list[int]:
     model = FlagModel(
         'BAAI/bge-base-en-v1.5',
         query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
@@ -68,16 +71,76 @@ def transformers_retriever(chunks_struct: list, user_query: str):
 
     return [int(sim_index)]
 
+
+def hypothetical_query_retriever(chunks_struct: list, user_query: str) -> list[int]:
+    model = FlagModel(
+        'BAAI/bge-base-en-v1.5',
+        query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
+        use_fp16=True,
+    )
+
+    generated_questions_file = Path(PROCESSED_DIR) / "generated_questions.json"
+    generated_questions = []
+
+    if generated_questions_file.is_file():
+        with open(generated_questions_file, "r", encoding='utf-8') as f:
+            generated_questions.append(f.read())
+    else:
+        for chunk in tqdm(chunks_struct, desc='generating questions'):
+            prompt = build_prompt_question_generation(chunk['chunk'])
+            generated_question = call_llm(prompt, llm='llama2')
+            generated_questions.append(generated_question)
+        with open(generated_questions_file, "w", encoding='utf-8') as f:
+            json.dump(generated_questions, f)
+
+    corpus_embedding = model.encode(generated_questions)
+    query_embedding = model.encode(user_query)
+
+    sim_scores = query_embedding @ corpus_embedding.T
+
+    sim_index = np.argmax(sim_scores)
+
+    return [int(sim_index)]
+
+
+def hyde_retriever(chunks_struct: list, user_query: str) -> list[int]:
+    model = FlagModel(
+        'BAAI/bge-base-en-v1.5',
+        query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
+        use_fp16=True,
+    )
+
+    prompt = build_prompt_question_hyde(user_query)
+    generated_question = call_llm(prompt, llm='llama2')
+
+    txt_chunk = []
+    for chunk in chunks_struct:
+        txt_chunk.append(chunk['chunk'])
+
+    corpus_embedding = model.encode(txt_chunk)
+    query_embedding = model.encode(generated_question)
+
+    sim_scores = query_embedding @ corpus_embedding.T
+    sim_index = np.argmax(sim_scores)
+    return [int(sim_index)]
+
+
 if __name__ == "__main__":
     path = Path(DOCUMENTS_DIR)
+
+    model = FlagModel(
+        'BAAI/bge-base-en-v1.5',
+        query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
+        use_fp16=True,
+    )
 
     texts = []
     for filename in path.glob("*.md"):
         with open(filename, encoding='utf-8') as f:
             texts.append(f.read())
 
-    chunks = trunkate_on_h2(texts)
+    chunks = truncate_on_h2(texts)
 
     question = "What function is used to check the closeness of two tensors ?"
 
-    print(transformers_retriever(chunks, question))
+    print(hyde_retriever(chunks, question, model))

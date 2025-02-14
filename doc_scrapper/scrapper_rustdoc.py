@@ -1,13 +1,13 @@
+import os
 import re
 
 import requests
 from bs4 import BeautifulSoup
-from src.config import RAG_FILE, DOCUMENTS_DIR
+
+from src.config import DOCUMENTS_DIR
 
 BASE_URL = "https://docs.rs"
 CRATE_URL = "https://docs.rs/burn/latest/burn/tensor/index.html"
-
-
 
 
 def to_markdown(html_content):
@@ -26,7 +26,7 @@ def to_markdown(html_content):
     text = re.sub(r'\&lt;', r' <', text, flags=re.DOTALL)
     text = re.sub(r'\&gt;', r'> ', text, flags=re.DOTALL)
     # Supprimer toutes les balises HTML restantes
-    #text = re.sub(r'<[^>]+>', '', text)
+    # text = re.sub(r'<[^>]+>', '', text)
 
     text = re.sub(r'<h5[^>]*>(.*?)</h5>', r'\1', text, flags=re.DOTALL)
     text = re.sub(r'<p[^>]*>(.*?)</p>', r'\1', text, flags=re.DOTALL)
@@ -102,7 +102,6 @@ def scrape_page(link: str, visited: dict):
 
     print(title)
 
-
     page_content_html = extract_main_content(page_soup)
     main_content_md = to_markdown(page_content_html)
 
@@ -118,17 +117,18 @@ def scrape_page(link: str, visited: dict):
         if not visited[link]:
             visited[link] = True
             try:
-                 scrape_page(link, visited)
+                scrape_page(link, visited)
 
             except Exception as e:
                 print(f"Impossible de scraper {link} : {e}")
 
 
-def main(link):
+def main_scrap(link):
+    os.makedirs(DOCUMENTS_DIR, exist_ok=True)
     visited = dict()
     scrape_page(link, visited)
 
-if __name__ == "__main__":
-    main(CRATE_URL)
 
-# %%
+if __name__ == "__main__":
+    main_scrap(CRATE_URL)
+

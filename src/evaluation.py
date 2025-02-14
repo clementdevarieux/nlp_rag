@@ -1,17 +1,20 @@
 import json
+import time
 from pathlib import Path
 
-from src.config import TEST_DIR
-from src.config import DOCUMENTS_DIR
-from src.llm_query import call_llm
-from src.retriever import tfidf_retriever, transformers_retriever
-from src.chunk import trunkate_on_h2
-
 import evaluate
-import time
+from tqdm import tqdm
+
+from src.chunk import truncate_on_h2
+from src.config import DOCUMENTS_DIR
+from src.config import TEST_DIR
+from src.llm_query import call_llm
+from src.prompt import build_prompt
+from src.retriever import hypothetical_query_retriever, tfidf_retriever, transformers_retriever, hyde_retriever
 
 with open(TEST_DIR / 'questions_evaluation.json', 'r') as f:
     eval_json = json.load(f)
+
 
 def evaluate_rag_rouge(evaluation_data,
                        retrieved_indices_func,
@@ -20,12 +23,12 @@ def evaluate_rag_rouge(evaluation_data,
                        retriever,
                        llm,
                        chunking):
-
+    print(retriever + " " + llm)
     rouge_scores = []
     start_time = time.strftime("%Y%m%d-%H%M%S")
     rouge = evaluate.load('rouge')
 
-    for data in evaluation_data:
+    for data in tqdm(evaluation_data):
         question = data['question']
         evaluation_indice = data['indices']
         reference_response = data['reference_response']
@@ -36,9 +39,12 @@ def evaluate_rag_rouge(evaluation_data,
             retrieved_indices = [retrieved_indices]
 
         best_retrieved_doc = chunks[retrieved_indices[0]]
-        generated_response = generated_response_func(question, best_retrieved_doc, llm=llm)
 
-        rouge_score = rouge.compute(predictions=[generated_response], references=[reference_response], use_aggregator=False)
+        prompt = build_prompt(question, best_retrieved_doc)
+        generated_response = generated_response_func(prompt, llm=llm)
+
+        rouge_score = rouge.compute(predictions=[generated_response], references=[reference_response],
+                                    use_aggregator=False)
 
         if retrieved_indices == evaluation_indice:
             rouge_score["isAccurateChunk"] = 1
@@ -53,7 +59,6 @@ def evaluate_rag_rouge(evaluation_data,
 
     with open(f'evaluation_files/rouge_scores_{retriever}_{llm_str}_{chunking}_{start_time}.json', 'w') as f:
         json.dump(rouge_scores, f, indent=4)
-
 
 
 def retrieved_indices_func(question):
@@ -73,14 +78,25 @@ if __name__ == '__main__':
         with open(filename, encoding='utf-8') as f:
             texts.append(f.read())
 
-    chunks = trunkate_on_h2(texts)
-    evaluate_rag_rouge(eval_json,
-                       transformers_retriever,
-                       call_llm,
-                       chunks,
-                       "transformers_retriever",
-                       "llama2",
-                       "double_hashtag")
+    chunks = truncate_on_h2(texts)
 
+    retrievers = [
+        #{"fct": tfidf_retriever, "label": "tfidf"},
+        #{"fct": hyde_retriever, "label": "hyde"},
+        #{"fct": transformers_retriever, "label": "transformers"},
+        {"fct": hypothetical_query_retriever, "label": "hypothetical"},
+    ]
 
-#%%
+    llm = ["mistral-small", "llama2", "deepseek-r1"]
+
+    for retriever in tqdm(retrievers):
+        for llm in tqdm(llm, desc="llm"):
+            evaluate_rag_rouge(eval_json,
+                               retriever['fct'],
+                               call_llm,
+                               chunks,
+                               retriever['label'],
+                               llm,
+                               "v2")
+
+    # %%
