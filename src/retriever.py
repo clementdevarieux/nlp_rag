@@ -3,6 +3,12 @@ import torch
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from transformers import BertTokenizer, BertModel
+from FlagEmbedding import FlagModel
+
+from pathlib import Path
+from src.config import DOCUMENTS_DIR
+from src.chunk import trunkate_on_h2
+import gc
 
 
 def get_fittest_chunk(ordered_similarities: list, user_query: str) -> dict:
@@ -42,16 +48,36 @@ def tfidf_retriever(chunks_struct: list, user_query: str) -> list[int]:
     fittest_chunk_index = np.argmax(cosin_similarities)
     return [int(fittest_chunk_index)]
 
-
-## TODO UNFINISHED
 def transformers_retriever(chunks_struct: list, user_query: str):
-    tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
-    model = BertModel.from_pretrained('bert-base-cased')
+    model = FlagModel(
+        'BAAI/bge-base-en-v1.5',
+        query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
+        use_fp16=True,
+    )
 
-    def encode_text(texts, tokenizer, model):
-        inputs = tokenizer(texts, padding=True, truncation=True, return_tensors='pt', max_length=512)
-        with torch.no_grad():
-            outputs = model(**inputs)
-        embeddings = outputs.last_hidden_state[:, 0, :]
-        return embeddings
-    # TODO
+    txt_chunk = []
+    for chunk in chunks_struct:
+        txt_chunk.append(chunk['chunk'])
+
+    corpus_embedding = model.encode(txt_chunk)
+    query_embedding = model.encode(user_query)
+
+    sim_scores = query_embedding @ corpus_embedding.T
+
+    sim_index = np.argmax(sim_scores)
+
+    return [int(sim_index)]
+
+if __name__ == "__main__":
+    path = Path(DOCUMENTS_DIR)
+
+    texts = []
+    for filename in path.glob("*.md"):
+        with open(filename, encoding='utf-8') as f:
+            texts.append(f.read())
+
+    chunks = trunkate_on_h2(texts)
+
+    question = "What function is used to check the closeness of two tensors ?"
+
+    print(transformers_retriever(chunks, question))

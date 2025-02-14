@@ -4,7 +4,7 @@ from pathlib import Path
 from src.config import TEST_DIR
 from src.config import DOCUMENTS_DIR
 from src.llm_query import call_llm
-from src.retriever import tfidf_retriever
+from src.retriever import tfidf_retriever, transformers_retriever
 from src.chunk import trunkate_on_h2
 
 import evaluate
@@ -40,11 +40,6 @@ def evaluate_rag_rouge(evaluation_data,
 
         rouge_score = rouge.compute(predictions=[generated_response], references=[reference_response], use_aggregator=False)
 
-        print(generated_response)
-        print("\n\n\n\n\n\n ref response")
-        print(reference_response)
-
-
         if retrieved_indices == evaluation_indice:
             rouge_score["isAccurateChunk"] = 1
         else:
@@ -76,16 +71,15 @@ if __name__ == '__main__':
     texts = []
     for filename in path.glob("*.md"):
         with open(filename, encoding='utf-8') as f:
-            # print(f)
             texts.append(f.read())
 
     chunks = trunkate_on_h2(texts)
     evaluate_rag_rouge(eval_json,
-                       tfidf_retriever,
+                       transformers_retriever,
                        call_llm,
                        chunks,
-                       "tfidf_retriever",
-                       "deepseek-r1:7b",
+                       "transformers_retriever",
+                       "llama2",
                        "double_hashtag")
 
 
